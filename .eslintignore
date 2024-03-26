@@ -1,0 +1,15 @@
+.cache/
+.next/
+.swc/
+.vscode/
+dist/
+node_modules/
+
+# files outside of scope, e.g. also not in tsconfig
+next.config.js
+setupServer.js
+jest.setup.js
+jest.config.js
+
+.DS_Store
+*.pem
