@@ -11,6 +11,7 @@ interface ParticlesProps {
 	ease?: number;
 	refresh?: boolean;
 }
+const colors = ["#ffffff", '#ffffff','#ffffff', '#90B3DD', '#ffffff','#ffffff',  "#ffcccc", "#ff9999", ]; 
 
 export default function Particles({
 	className = "",
@@ -27,6 +28,11 @@ export default function Particles({
 	const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 	const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
 	const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
+
+
+	const getRandomColor = () => {
+		return colors[Math.floor(Math.random() * colors.length)];
+	  };
 
 	useEffect(() => {
 		if (canvasRef.current) {
@@ -79,6 +85,7 @@ export default function Particles({
 		dx: number;
 		dy: number;
 		magnetism: number;
+		color: string;
 	};
 
 	const resizeCanvas = () => {
@@ -99,42 +106,46 @@ export default function Particles({
 		const y = Math.floor(Math.random() * canvasSize.current.h);
 		const translateX = 0;
 		const translateY = 0;
-		const size = Math.floor(Math.random() * 2) + 1; // Keep the size change
+		const size = Math.floor(Math.random() * 2) + 1; // Varying size of particles
 		const alpha = 0;
 		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
-		// Adjust dx and dy to make particles move slower
-		const dx = (Math.random() - 0.5) * 0.10; // Adjusted for slower horizontal movement
-		const dy = (Math.random() - 0.5) * 0.1; // Adjusted for slower vertical movement
+		const dx = (Math.random() - 0.5) * 0.05;
+		const dy = (Math.random() - 0.5) * 0.05;
 		const magnetism = 0.1 + Math.random() * 4;
+		const color = getRandomColor(); // Random color selection
 		return {
-			x,
-			y,
-			translateX,
-			translateY,
-			size,
-			alpha,
-			targetAlpha,
-			dx,
-			dy,
-			magnetism,
+		  x,
+		  y,
+		  translateX,
+		  translateY,
+		  size,
+		  alpha,
+		  targetAlpha,
+		  dx,
+		  dy,
+		  magnetism,
+		  color,
 		};
-	};
+	  };
+
+	//TODO: ADd different colours for partifcles
+
 
 	const drawCircle = (circle: Circle, update = false) => {
 		if (context.current) {
-			const { x, y, translateX, translateY, size, alpha } = circle;
-			context.current.translate(translateX, translateY);
-			context.current.beginPath();
-			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-			context.current.fill();
-			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-			if (!update) {
-				circles.current.push(circle);
-			}
+		  const { x, y, translateX, translateY, size, alpha, color } = circle;
+		  context.current.translate(translateX, translateY);
+		  context.current.beginPath();
+		  context.current.arc(x, y, size, 0, 2 * Math.PI);
+		  context.current.fillStyle = color; // Use the selected color
+		  context.current.fill();
+		  context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
+	
+		  if (!update) {
+			circles.current.push(circle);
+		  }
 		}
-	};
+	  };
 
 	const clearContext = () => {
 		if (context.current) {
