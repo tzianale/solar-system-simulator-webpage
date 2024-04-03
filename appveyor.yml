@@ -1,8 +1,8 @@
-version: 1.0.$(APPVEYOR_BUILD_NUMBER)
+version: 1.0.{build}
 
 environment:
   matrix:
-    - nodejs_version: "14"
+    - nodejs_version: "16"
 
 cache:
   - node_modules
