@@ -9,7 +9,7 @@ cache:
 
 install:
   # Install Node.js and npm
-  - ps: Install-Product node $env:nodejs_version
+  - ps: Install-Product node $env:nodejs_version $env:nodejs_architecture
   - node -v
   - npm -v
 
