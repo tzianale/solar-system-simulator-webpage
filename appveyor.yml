@@ -1,7 +1,5 @@
 version: 1.0
 
-image: PreviousAppVeyorBuildImage
-
 environment:
   matrix:
     - nodejs_version: "14"
