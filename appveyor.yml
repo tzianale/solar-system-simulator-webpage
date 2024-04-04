@@ -1,0 +1,27 @@
+version: 1.0.{build}
+
+environment:
+  matrix:
+    - nodejs_version: "20"
+
+cache:
+  - node_modules
+
+install:
+  # Install Node.js and npm
+  - ps: Install-Product node $env:nodejs_version $env:nodejs_architecture
+  - node -v
+  - npm -v
+
+  # Install dependencies
+  - npm install
+
+build_script:
+  # Run linting (if applicable)
+  - npm run lint
+
+  # Run tests
+  - npm test
+
+  # Build Next.js project
+  - npm run build
