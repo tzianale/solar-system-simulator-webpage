@@ -18,15 +18,16 @@ export default function Home() {
               >
                 Tutorial
               </a>
+
               <a
                 href="/api"
-                className="group relative inline-block text-gray-300 font-semibold mx-4 px-4 py-2 rounded-2xl transition duration-300 before:absolute before:left-1/2 before:right-1/2 before:bottom-0 before:h-0.5 before:bg-gray-300 before:transition-all before:duration-300 hover:before:left-0 hover:before:right-0"
+                className="group relative inline-block text-gray-300 font-semibold mx-4 px-4 py-2  rounded-2xl transition duration-300 before:absolute before:left-1/2 before:right-1/2 before:bottom-0 before:h-0.5 before:bg-gray-300 before:transition-all before:duration-300 hover:before:left-0 hover:before:right-0"
               >
                 API
               </a>
               <a
                 href="/about"
-                className="relative inline-block text-gray-300 font-semibold px-4 mx-4 py-1.5 border-b-2 border-gray-300"
+                className="relative inline-block text-gray-300 font-semibold mr-10 px-4 mx-4 py-1.5 border-b-2 border-gray-300"
               >
                 About
               </a>

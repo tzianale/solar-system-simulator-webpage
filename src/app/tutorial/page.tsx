@@ -35,6 +35,7 @@ export default function Home() {
         </div>
       </nav>
       <main className="relative flex-1 flex flex-col items-center justify-center z-0">
+        
         <div className="text-white text-4xl mt-12 font-semibold">
           Welcome to the Tutorial Page
         </div>

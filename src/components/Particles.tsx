@@ -40,6 +40,12 @@ export default function Particles({
   const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
   const dpr = typeof window !== 'undefined' ? window.devicePixelRatio : 1;
 
+
+  /**
+   * Selects a random Color from const Color.
+   * 
+   * @returns color for the individual Star
+   */
   const getRandomColor = () => {
     return colors[Math.floor(Math.random() * colors.length)];
   };
@@ -70,17 +76,20 @@ export default function Particles({
     drawParticles();
   };
 
+  /**
+   * 
+   * 
+   */
   const onMouseMove = () => {
     if (canvasRef.current) {
       const rect = canvasRef.current.getBoundingClientRect();
       const { w, h } = canvasSize.current;
       const x = mousePosition.x - rect.left - w / 2;
       const y = mousePosition.y - rect.top - h / 2;
-      const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
-      if (inside) {
-        mouse.current.x = x;
-        mouse.current.y = y;
-      }
+      const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;	
+      mouse.current.x = x;
+      mouse.current.y = y;
+
     }
   };
 
@@ -111,6 +120,11 @@ export default function Particles({
     }
   };
 
+  /**
+   * Movement of the stars ( not mouse related )
+   * 
+   * @returns 
+   */
   const circleParams = (): Circle => {
     const x = Math.floor(Math.random() * canvasSize.current.w);
     const y = Math.floor(Math.random() * canvasSize.current.h);
@@ -119,6 +133,7 @@ export default function Particles({
     const size = Math.floor(Math.random() * 2) + 1;
     const alpha = 0;
     const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
+    // speed of the stars. Multiplikator regulates speed. Lower = slower
     const dx = (Math.random() - 0.5) * 0.02;
     const dy = (Math.random() - 0.5) * 0.02;
     const magnetism = 0.1 + Math.random() * 4;
