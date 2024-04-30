@@ -41,4 +41,4 @@ deploy_script:
   - ps: icacls $env:USERPROFILE\.ssh\id_rsa /grant "$env:USERNAME`:R"
 
   # Secure copy built files to server using SSH
-  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r ./ $env:SERVER_USERNAME@$env:SERVER_IP:/var/www/solar-system-simulator-website
+  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r C:\projects\solar-system-simulator-webpage $env:SERVER_USERNAME@$env:SERVER_IP:/var/www/solar-system-simulator-website
