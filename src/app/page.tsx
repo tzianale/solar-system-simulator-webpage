@@ -1,8 +1,5 @@
 import Particles from '@/components/Particles';
 import ParallaxSun from '@/components/ParallaxSun';
-import ParallaxEarth from '@/components/ParallaxEarth';
-import ParallaxMars from '@/components/ParallaxMars';
-import ParallaxMoon from '@/components/ParallaxMoon';
 
 
 export default function Home() {
