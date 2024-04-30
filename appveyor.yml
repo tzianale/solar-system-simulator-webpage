@@ -38,7 +38,7 @@ deploy_script:
 
   # Set permissions for SSH private key file
   - ps: icacls $env:USERPROFILE\.ssh\id_rsa /inheritance:r
-  - ps: icacls $env:USERPROFILE\.ssh\id_rsa /grant:r "$env:USERNAME:R"
+  - ps: icacls $env:USERPROFILE\.ssh\id_rsa /grant $env:USERNAME:(R)
 
   # Secure copy built files to server using SSH
   - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r ./out $env:SERVER_USERNAME@$env:SERVER_IP:/var/www/solar-system-simulator-website
