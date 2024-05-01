@@ -3,8 +3,6 @@ version: 1.0.{build}
 environment:
   matrix:
     - nodejs_version: "20"
-    - SERVER_IP: "160.85.252.80"
-    - SERVER_USERNAME: "ubuntu"
 
 cache:
   - node_modules
@@ -41,4 +39,4 @@ deploy_script:
   - ps: icacls $env:USERPROFILE\.ssh\id_rsa /grant "$env:USERNAME`:R"
 
   # Secure copy built files to server using SSH
-  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r (Get-ChildItem -Path ./ -Exclude '.', '..') ubuntu@160.85.252.80:/var/www/solar-system-simulator-webpage
+  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r (Get-ChildItem -Path ./ -Exclude '.', '..', 'node_modules') ubuntu@160.85.252.80:/var/www/solar-system-simulator-webpage
