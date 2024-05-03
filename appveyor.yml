@@ -26,6 +26,10 @@ build_script:
   # Build Next.js project
   - npm run build
 
+before_deploy:
+  # Remove old host key
+  - ps: ssh-keygen -R "160.85.252.39"
+
 deploy_script:
   # Decrypt SSH private key
   - ps: $key = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:SSH_PRIVATE_KEY))
@@ -39,4 +43,4 @@ deploy_script:
   - ps: icacls $env:USERPROFILE\.ssh\id_rsa /grant "$env:USERNAME`:R"
 
   # Secure copy built files to server using SSH
-  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r (Get-ChildItem -Path ./ -Exclude '.', '..', 'node_modules') ubuntu@160.85.252.80:/var/www/solar-system-simulator-webpage
+  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r (Get-ChildItem -Path ./ -Exclude '.', '..', 'node_modules') ubuntu@160.85.252.39:/var/www/solar-system-simulator-webpage
