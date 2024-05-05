@@ -3,8 +3,6 @@ version: 1.0.{build}
 environment:
   matrix:
     - nodejs_version: "20"
-    - SERVER_IP: "160.85.252.80"
-    - SERVER_USERNAME: "ubuntu"
 
 cache:
   - node_modules
@@ -28,15 +26,21 @@ build_script:
   # Build Next.js project
   - npm run build
 
+before_deploy:
+  # Remove old host key
+  - ps: ssh-keygen -R "160.85.252.39"
+
 deploy_script:
   # Decrypt SSH private key
-  - ps: $env:SSH_PRIVATE_KEY | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-Base64String
-
-  # Set up SSH authentication
   - ps: $key = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($env:SSH_PRIVATE_KEY))
+
+  # Delete existing file before creating a new one
+  - ps: Remove-Item -Path $env:USERPROFILE\.ssh\id_rsa -ErrorAction SilentlyContinue
   - ps: New-Item -Path $env:USERPROFILE\.ssh -Name "id_rsa" -Value $key
-  - ps: Set-Content -Path $env:USERPROFILE\.ssh\id_rsa -Value $key
+
+  # Set permissions for SSH private key file
+  - ps: icacls $env:USERPROFILE\.ssh\id_rsa /inheritance:r
+  - ps: icacls $env:USERPROFILE\.ssh\id_rsa /grant "$env:USERNAME`:R"
 
   # Secure copy built files to server using SSH
-  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r ./out $env:SERVER_USERNAME@$env:SERVER_IP:/var/www/solar-system-simulator-website
-
+  - ps: scp -i $env:USERPROFILE\.ssh\id_rsa -r (Get-ChildItem -Path ./ -Exclude '.', '..', 'node_modules') ubuntu@160.85.252.39:/var/www/solar-system-simulator-webpage
