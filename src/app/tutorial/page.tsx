@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const [selecedTopic, setSelectedTopic] = useState(null);
+  const [selecedTopic, setSelectedTopic] = useState("");
 
   const renderContent = () => {
     switch (selecedTopic) {
@@ -96,7 +96,7 @@ export default function Home() {
 
             <p className="mb-4">
               In the Solar System Simulator, you can control the camera to navigate through space
-              and explore celestial bodies. Here's how you can move the camera:
+              and explore celestial bodies. Here&apos;s how you can move the camera:
             </p>
 
             <div className="mb-4">
@@ -140,7 +140,7 @@ export default function Home() {
 
             <p className="mb-4">
               In the Solar System Simulator, camera presets allow you to quickly change the camera
-              position and orientation for different viewing angles and perspectives. Here's a
+              position and orientation for different viewing angles and perspectives. Here&apos;s a
               detailed explanation of each camera preset:
             </p>
 
@@ -149,7 +149,7 @@ export default function Home() {
               <p className="mb-2">
                 Press the <strong>1</strong> key to switch to a top-down view of the solar system.
                 This preset provides an overhead perspective looking down on the planets and their
-                orbits. It's ideal for observing the alignment of planets and their orbits relative
+                orbits. It&apos;s ideal for observing the alignment of planets and their orbits relative
                 to each other.
               </p>
             </div>
@@ -159,7 +159,7 @@ export default function Home() {
               <p className="mb-2">
                 Press the <strong>2</strong> key to switch to a front-facing view of the solar
                 system. This preset positions the camera in front of the planets, allowing you to
-                see them from a frontal perspective. It's useful for getting a closer look at
+                see them from a frontal perspective. It&apos;s useful for getting a closer look at
                 individual planets or observing their details.
               </p>
             </div>
@@ -169,7 +169,7 @@ export default function Home() {
               <p className="mb-2">
                 Press the <strong>3</strong> key to switch to a side view of the solar system. This
                 preset positions the camera to the side of the planets, giving you a profile view of
-                the solar system. It's great for observing the relative positions of planets and
+                the solar system. It&apos;s great for observing the relative positions of planets and
                 moons from a different angle.
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function Home() {
               <p className="mb-2">
                 Press the <strong>4</strong> key to zoom out and view the entire solar system from a
                 distance. This preset provides an overview of the entire solar system with all
-                planets visible. It's perfect for getting a big-picture view of the solar system and
+                planets visible. It&apos;s perfect for getting a big-picture view of the solar system and
                 its layout.
               </p>
             </div>
@@ -257,7 +257,7 @@ export default function Home() {
 
             <p className="mb-4">
               The Planet Selection feature in the Solar System Simulator allows you to easily
-              navigate between different celestial bodies within the solar system. Here's how you
+              navigate between different celestial bodies within the solar system. Here&apos;s how you
               can use it:
             </p>
 
@@ -273,13 +273,13 @@ export default function Home() {
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">2. Selecting a Planet</h3>
               <p className="mb-2">
-                Once the Planet Selection window is open, you'll see a list of available planets in
+                Once the Planet Selection window is open, you&apos;ll see a list of available planets in
                 the solar system. Each planet will be represented by its name and possibly a small
                 icon or image for easy identification.
               </p>
               <p className="mb-2">
                 To select a planet, simply click on its name or icon in the Planet Selection window.
-                The selected planet will be highlighted, indicating that it's ready for further
+                The selected planet will be highlighted, indicating that it&apos;s ready for further
                 action.
               </p>
               <p className="mb-2">
@@ -292,7 +292,7 @@ export default function Home() {
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">3. Exploring Planets</h3>
               <p className="mb-2">
-                Once you've selected a planet, you can use the camera controls to navigate around it
+                Once you&apos;ve selected a planet, you can use the camera controls to navigate around it
                 and observe its features. Zoom in to see surface details, pan around to explore
                 different areas, and rotate the camera to view the planet from different angles.
               </p>
@@ -309,7 +309,7 @@ export default function Home() {
 
             <p>
               The Planet Selection feature makes it easy to explore and learn about the various
-              planets in our solar system. Whether you're interested in Earth, Mars, Jupiter, or any
+              planets in our solar system. Whether you&apos;re interested in Earth, Mars, Jupiter, or any
               other celestial body, you can quickly navigate to it and start your cosmic journey!
             </p>
           </div>
@@ -321,7 +321,7 @@ export default function Home() {
 
             <p className="mb-4">
               The Planet Information feature in the Solar System Simulator provides detailed data
-              and facts about each celestial body in the solar system. Here's how you can access and
+              and facts about each celestial body in the solar system. Here&apos;s how you can access and
               utilize it:
             </p>
 
@@ -366,7 +366,7 @@ export default function Home() {
 
             <p className="mb-4">
               The Planet Orbits feature in the Solar System Simulator visualizes the paths and
-              trajectories of planets as they orbit the sun. Here's how you can explore planetary
+              trajectories of planets as they orbit the sun. Here&apos;s how you can explore planetary
               orbits:
             </p>
 
@@ -374,7 +374,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-2">1. Viewing Planet Orbits</h3>
               <p className="mb-2">
                 To observe the orbits of planets, click on a specific planet within the simulator
-                interface. A visual representation of the planet's orbit will be displayed, showing
+                interface. A visual representation of the planet&apos;s orbit will be displayed, showing
                 its elliptical path around the sun.
               </p>
             </div>
@@ -436,7 +436,7 @@ export default function Home() {
             </p>
 
             <p className="mb-2">
-              Whether you're a student, a space enthusiast, or just curious, our simulator lets you
+              Whether you&apos;re a student, a space enthusiast, or just curious, our simulator lets you
               discover planets, moons, and more.
             </p>
 
