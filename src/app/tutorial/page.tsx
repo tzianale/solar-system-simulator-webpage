@@ -3,109 +3,184 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const [selecedTopic, setSelectedTopic] = useState("");
+  const [selecedTopic, setSelectedTopic] = useState('');
 
   const renderContent = () => {
     switch (selecedTopic) {
       case 'GSinstallation':
         return (
           <div className="max-w-xl mx-auto my-8">
-            <h2 className="text-2xl font-semibold mb-4">Installation Instructions</h2>
+            <h2 className="text-xl font-semibold mb-2">Installation Instructions</h2>
+
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">1. Download the Simulator: </h3>
+              <p className="mb-2">
+                Download the latest version of the solar system simulator under «Downloads» or click
+                here[HYPERLINK zum Download].{' '}
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">2. Extract the Files:</h3>
+              <p className="mb-2">
+                Locate the downloaded ZIP file and extract its contents to your desired location on
+                your computer.{' '}
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">3. Run the Simulator: </h3>
+              <p className="mb-2">
+                Navigate to the extracted folder and find the .exe file (SolarSystemSimulator.exe).{' '}
+              </p>
+              <p className="mb-2">Double-click the .exe file to launch the simulator. </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">4. First-Time Setup: </h3>
+              <p className="mb-2">
+                The first time you run the simulator, you may be prompted by your operating system
+                to confirm that you trust the application. Confirm and allow the simulator to run.{' '}
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">5. Explore the Solar System: </h3>
+              <p className="mb-2">
+                Once the simulator is running, you can start exploring the solar system!
+              </p>
+            </div>
+          </div>
+        );
+      case 'GSmainmenu':
+        return (
+          <div className="max-w-xl mx-auto my-8">
+            <h2 className="text-2xl font-semibold mb-4">Mainmenu </h2>
+            <p className="mb-2">
+              By starting the application, the main menu is the first screen that appears. It
+              presents four clickable buttons:
+            </p>
             <ol className="list-decimal pl-6 mb-6">
-              <li className="mb-2">
-                Download the game files from the official website or repository.
-              </li>
-              <li className="mb-2">Extract the downloaded files to a location of your choice.</li>
-              <li className="mb-2">Open the extracted folder.</li>
-              <li className="mb-2">Run the game executable file to start the simulation.</li>
+              <li className="mb-2">Explorer</li>
+              <li className="mb-2">Sandbox</li>
+              <li className="mb-2">Settings</li>
+              <li className="mb-2">Quit</li>
             </ol>
             <p className="mb-2">
-              Follow the on-screen instructions to set up your simulation environment.
+              Clicking the Explorer button starts the Explorer Mode, where the solar system is
+              implemented realistically. The Sandbox button initiates the Sandbox Mode, where you
+              can play with the planets and manipulate them. Clicking on Settings will bring up a
+              window above the main menu where you can adjust various settings. Lastly, Quit allows
+              you to exit the application.{' '}
             </p>
-            <p>Enjoy exploring the universe in your simulation game!</p>
+          </div>
+        );
+      case 'GSsettings':
+        return (
+          <div className="max-w-xl mx-auto my-8">
+            <h2 className="text-2xl font-semibold mb-4">Settings</h2>
+            <p className="mb-2">
+              In this window, you can adjust the brightness, sound volume, and graphics settings.
+              There are multiple graphic resolutions available, ranging from Low to High.
+              Additionally, you can choose whether the application should be displayed in Fullscreen
+              mode.
+            </p>
           </div>
         );
       case 'CCuicomponents':
         return (
           <div className="max-w-xl mx-auto my-8">
-            <h2 className="text-2xl font-semibold mb-4">Solar System Simulator Components</h2>
+            <h2 className="text-2xl font-semibold mb-4">Solar System Simulator UI Components </h2>
 
             <div className=" rounded-lg p-6  mb-6">
               <h3 className="text-lg font-semibold mb-2">Planet Selection</h3>
               <p className="mb-4">
-                Planet selection allows users to choose which celestial body they want to focus on
-                within the solar system. It is commonly used to switch between different planets for
-                observation or analysis.
+                The User Interface (UI) is one the most important things to understand if you want
+                to use a program correctly. Although most UI elements are intuitive, this short
+                tutorial will help the user to completely understand each element of the UI.
               </p>
-              <select className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-500">
-                <option value="mercury">Mercury</option>
-                <option value="venus">Venus</option>
-                <option value="earth">Earth</option>
-                <option value="mars">Mars</option>
-              </select>
-            </div>
-
-            <div className=" rounded-lg p-6 mb-6">
-              <h3 className="text-lg font-semibold mb-2">Time Controls</h3>
               <p className="mb-4">
-                Time controls allow users to manipulate the simulations time settings, such as
-                speeding up, slowing down, or pausing time. It is commonly used to observe celestial
-                events at different speeds or timeframes.
+                As the functionalities of the Main Menu and Settings panels were already explained
+                in the respective previous chapters, this tutorial will focus on the UI of the
+                simulation itself.{' '}
               </p>
-              <div className="flex items-center space-x-4">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Play
-                </button>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Pause
-                </button>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Reset
-                </button>
-              </div>
-            </div>
-
-            <div className=" rounded-lg p-6 ">
-              <h3 className="text-lg font-semibold mb-2">Camera Movement</h3>
               <p className="mb-4">
-                Camera movement controls allow users to navigate and explore the solar system
-                simulation from different perspectives. It is commonly used to zoom in, zoom out,
-                rotate, and pan around the solar system.
+                The following image depicts the starting state of the simulation. The program has
+                four interactable elements: the speed slider, the Play / Pause button, the Escape
+                button, as well as a third button on the lower part of the screen with an arrow
+                pointing upwards.{' '}
               </p>
-              <div className="flex items-center space-x-4">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Zoom In
-                </button>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Zoom Out
-                </button>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Rotate Left
-                </button>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-                  Rotate Right
-                </button>
-              </div>
+              <p className="mb-4">placeholderimage</p>
+              <ol className="list-decimal pl-6 mb-6">
+                <li className="mb-2">
+                  imulation speed slider: since the program depicts the entire solar system,
+                  real-time steps would not allow the user to see perceivable planet movements. This
+                  slider can be used to increase the time steps, letting the user see movements that
+                  would take years to happen in a matter of seconds! – More details about the
+                  simulation speed will follow in the “Time Controls” chapter –
+                </li>
+                <li className="mb-2">
+                  Play / Pause button: this button brings the whole simulation to a sudden stop. UI
+                  Components will still function as expected, but the bodies in the solar system
+                  will stay completely still. This button can be useful for screenshots, as well as
+                  for taking some time to examinate each planet and its position.{' '}
+                </li>
+                <li className="mb-2">
+                  Escape button: a left click on this button will halt the simulation and take the
+                  user back to the main menu. Once in the main menu, the program can be quitted
+                  using the corresponding button, or a new simulation can be started. Be aware that
+                  in the current state the program will not save any eventual changes made to the
+                  simulation!{' '}
+                </li>
+                <li className="mb-2">
+                  The arrow button: if this button is pressed, a list of planets will raise from the
+                  lower part of the screen, as depicted in the following screenshot. One more click,
+                  and the list will lower itself to the original position.{' '}
+                </li>
+              </ol>
+
+              <p className="mb-4">placeholderimage</p>
+              <p className="mb-4">
+                The list is scrollable, either by moving the white bar on the bottom to the right,
+                scrolling with the mouse wheel, or by dragging the planets to the left. Each element
+                in the list is interactable: a single left click will open an info tab with details
+                about the specific planet (details about the Planet Info Tab will be explained in
+                the following chapter), two clicks will move the camera to focus on the planet.{' '}
+              </p>
             </div>
           </div>
         );
       case 'CCCammov':
         return (
           <div className="max-w-xl mx-auto my-8 p-4">
-            <h2 className="text-xl font-semibold mb-2">Camera Movement Controls</h2>
+            <h2 className="text-xl font-semibold mb-2">Camera Movement</h2>
 
             <p className="mb-4">
-              In the Solar System Simulator, you can control the camera to navigate through space
-              and explore celestial bodies. Here&apos;s how you can move the camera:
+              Navigating the solar system simulator is intuitive and allows for a smooth exploration
+              experience. The controls are the following:
             </p>
 
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">Rotation</h3>
-              <p className="mb-2">To rotate the camera and change your viewing angle:</p>
-              <ul className="list-disc pl-6">
-                <li>Click and hold the left mouse button.</li>
-                <li>Move the mouse in any direction to rotate the camera.</li>
-              </ul>
+              <ol className="list-decimal pl-6 mb-6">
+                <li className="mb-2">
+                  Pan: Hold the left mouse button and drag to pan the camera across the scene.{' '}
+                </li>
+                <li className="mb-2">
+                  Zoom In/Out: Use the scroll wheel to zoom in and out, bringing objects closer or
+                  pushing them further away.{' '}
+                </li>
+                <li className="mb-2">
+                  Rotate: Hold the right mouse button and move the mouse to rotate the camera around
+                  the current pivot point.{' '}
+                </li>
+                <li className="mb-2">
+                  Increase Sensitivity: Hold the Shift key while performing any of the above actions
+                  to increase the sensitivity, allowing for faster movements.{' '}
+                </li>
+                <li className="mb-2">
+                  Reset View: Press R on the keyboard to reset the camera back to the sun, in case
+                  you get lost in the solar system.{' '}
+                </li>
+              </ol>
             </div>
 
             <div className="mb-4">
@@ -139,66 +214,28 @@ export default function Home() {
             <h2 className="text-xl font-semibold mb-2">Camera Presets</h2>
 
             <p className="mb-4">
-              In the Solar System Simulator, camera presets allow you to quickly change the camera
-              position and orientation for different viewing angles and perspectives. Here&apos;s a
-              detailed explanation of each camera preset:
+              To enhance the user experience, we have included two camera presets that allow you to
+              quickly switch between different perspectives:
             </p>
 
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">1. Top-Down View</h3>
+              <h3 className="text-lg font-semibold mb-2">Bird's Eye View (Numpad 1)</h3>
               <p className="mb-2">
-                Press the <strong>1</strong> key to switch to a top-down view of the solar system.
-                This preset provides an overhead perspective looking down on the planets and their
-                orbits. It&apos;s ideal for observing the alignment of planets and their orbits relative
-                to each other.
+                Press the '1' key on the numpad to switch to a bird's eye view. This perspective
+                provides a top-down view centered around the current pivot point, ideal for getting
+                a comprehensive overview of the solar system.{' '}
               </p>
             </div>
 
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">2. Front View</h3>
+              <h3 className="text-lg font-semibold mb-2">Side View (Numpad 3)</h3>
               <p className="mb-2">
-                Press the <strong>2</strong> key to switch to a front-facing view of the solar
-                system. This preset positions the camera in front of the planets, allowing you to
-                see them from a frontal perspective. It&apos;s useful for getting a closer look at
-                individual planets or observing their details.
+                {' '}
+                Press the '3' key on the numpad to switch to a side view. This perspective offers a
+                lateral view of the current pivot point, useful for examining the spatial
+                relationships between planets.{' '}
               </p>
             </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">3. Side View</h3>
-              <p className="mb-2">
-                Press the <strong>3</strong> key to switch to a side view of the solar system. This
-                preset positions the camera to the side of the planets, giving you a profile view of
-                the solar system. It&apos;s great for observing the relative positions of planets and
-                moons from a different angle.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">4. Zoomed Out</h3>
-              <p className="mb-2">
-                Press the <strong>4</strong> key to zoom out and view the entire solar system from a
-                distance. This preset provides an overview of the entire solar system with all
-                planets visible. It&apos;s perfect for getting a big-picture view of the solar system and
-                its layout.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">5-8. Custom Presets</h3>
-              <p className="mb-2">
-                Press the <strong>5</strong> to <strong>8</strong> keys to access custom camera
-                presets. These presets can be configured to your liking, allowing you to save and
-                quickly switch between different camera angles and positions. You can set up custom
-                presets for specific planets, constellations, or other celestial features.
-              </p>
-            </div>
-
-            <p>
-              With camera presets, you can easily explore the solar system from various viewpoints
-              and angles without manually adjusting the camera every time. Experiment with different
-              presets to find the perfect perspective for your exploration!
-            </p>
           </div>
         );
       case 'CCTimeCon':
@@ -207,46 +244,12 @@ export default function Home() {
             <h2 className="text-xl font-semibold mb-2">Time Controls</h2>
 
             <p className="mb-4">
-              The Time Controls feature in the Solar System Simulator allows you to manipulate the
-              passage of time within the simulation. Here are the available time control options:
-            </p>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">1. Real-Time Mode</h3>
-              <p className="mb-2">
-                In Real-Time mode, the simulation progresses at the same rate as real-world time.
-                Planetary positions and movements are synchronized with actual celestial events.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">2. Time Warp</h3>
-              <p className="mb-2">
-                Time Warp allows you to accelerate or decelerate the simulation speed. You can
-                adjust the time warp factor to speed up or slow down time within the simulation,
-                enabling you to observe long-term changes or rapid events.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">3. Custom Time Settings</h3>
-              <p className="mb-2">
-                Some simulators may offer additional options for customizing time settings, such as:
-              </p>
-              <ul className="list-disc pl-6">
-                <li>Adjusting the time scale (e.g., days per second, years per minute).</li>
-                <li>Setting specific dates or time intervals for simulation playback.</li>
-              </ul>
-              <p className="mb-2">
-                These controls allow you to tailor the simulation experience to your preferences and
-                research interests.
-              </p>
-            </div>
-
-            <p>
-              The Time Controls feature provides flexibility and customization options for exploring
-              the passage of time within the solar system simulation, enabling you to observe
-              celestial phenomena at your desired pace.
+              You have a Play/Pause button that allows you to stop or start the simulation.
+              Positioned at the top left, there is a slider that enables you to control the speed of
+              the simulation. The slider scale ranges from 1 to 20, with the selected number
+              displayed above it. In Explorer Mode, below the slider, you can also see the current
+              date of the simulation. Each increment on the slider corresponds to one day per second
+              in terms of planet movement speed.
             </p>
           </div>
         );
@@ -257,8 +260,8 @@ export default function Home() {
 
             <p className="mb-4">
               The Planet Selection feature in the Solar System Simulator allows you to easily
-              navigate between different celestial bodies within the solar system. Here&apos;s how you
-              can use it:
+              navigate between different celestial bodies within the solar system. Here&apos;s how
+              you can use it:
             </p>
 
             <div className="mb-4">
@@ -273,9 +276,9 @@ export default function Home() {
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">2. Selecting a Planet</h3>
               <p className="mb-2">
-                Once the Planet Selection window is open, you&apos;ll see a list of available planets in
-                the solar system. Each planet will be represented by its name and possibly a small
-                icon or image for easy identification.
+                Once the Planet Selection window is open, you&apos;ll see a list of available
+                planets in the solar system. Each planet will be represented by its name and
+                possibly a small icon or image for easy identification.
               </p>
               <p className="mb-2">
                 To select a planet, simply click on its name or icon in the Planet Selection window.
@@ -292,9 +295,10 @@ export default function Home() {
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">3. Exploring Planets</h3>
               <p className="mb-2">
-                Once you&apos;ve selected a planet, you can use the camera controls to navigate around it
-                and observe its features. Zoom in to see surface details, pan around to explore
-                different areas, and rotate the camera to view the planet from different angles.
+                Once you&apos;ve selected a planet, you can use the camera controls to navigate
+                around it and observe its features. Zoom in to see surface details, pan around to
+                explore different areas, and rotate the camera to view the planet from different
+                angles.
               </p>
             </div>
 
@@ -309,8 +313,9 @@ export default function Home() {
 
             <p>
               The Planet Selection feature makes it easy to explore and learn about the various
-              planets in our solar system. Whether you&apos;re interested in Earth, Mars, Jupiter, or any
-              other celestial body, you can quickly navigate to it and start your cosmic journey!
+              planets in our solar system. Whether you&apos;re interested in Earth, Mars, Jupiter,
+              or any other celestial body, you can quickly navigate to it and start your cosmic
+              journey!
             </p>
           </div>
         );
@@ -320,94 +325,89 @@ export default function Home() {
             <h2 className="text-xl font-semibold mb-2">Planet Information</h2>
 
             <p className="mb-4">
-              The Planet Information feature in the Solar System Simulator provides detailed data
-              and facts about each celestial body in the solar system. Here&apos;s how you can access and
-              utilize it:
+              Each body has its own information tab. This tab is a window on the right side of the
+              screen which shows diverse properties of the clicked object. The following screenshot
+              provides an example of the Info Tab from the Explorer Mode:
             </p>
 
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">1. Accessing Planet Information</h3>
-              <p className="mb-2">
-                To view information about a specific planet, click on the planet within the
-                simulator interface. A pop-up window or panel will appear, displaying detailed data
-                and facts about the selected planet.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">2. Exploring Planet Data</h3>
-              <p className="mb-2">
-                The Planet Information window typically includes various categories of data, such
-                as:
-              </p>
-              <ul className="list-disc pl-6">
-                <li>Basic planetary information (e.g., name, diameter, mass).</li>
-                <li>Physical characteristics (e.g., atmosphere, surface features).</li>
-                <li>Orbital parameters (e.g., distance from the sun, orbital period).</li>
-                <li>Scientific discoveries and missions related to the planet.</li>
-              </ul>
-              <p className="mb-2">
-                You can navigate through these categories to learn more about the selected planet
-                and its properties.
-              </p>
-            </div>
-
-            <p>
-              The Planet Information feature allows users to deepen their understanding of each
-              celestial body in the solar system by providing comprehensive data and facts at their
-              fingertips.
+            <p className="mb-2">immage placeholder</p>
+            <p className="mb-4">immage placeholder</p>
+            <p className="mb-2">
+              The application currently has twelve “Static Properties” (properties that would not be
+              changing in a real-life-like case) and two “Variable Properties” (properties that
+              would change depending on the time of measurement).
             </p>
-          </div>
-        );
-      case 'CCPlanOrbit':
-        return (
-          <div className="max-w-xl mx-auto my-8 p-4">
-            <h2 className="text-xl font-semibold mb-2">Planet Orbits</h2>
-
-            <p className="mb-4">
-              The Planet Orbits feature in the Solar System Simulator visualizes the paths and
-              trajectories of planets as they orbit the sun. Here&apos;s how you can explore planetary
-              orbits:
+            <ul className="list-disc pl-6">
+              <li>Mass: The mass of the body in kg </li>
+              <li>
+                Body Type: Describes what kind of object the body is. Objects can be Stars, Rocky
+                Planets, Dwarf Planets, Moons, Gas Giants, or Ice Giants{' '}
+              </li>
+              <li>
+                Surface Temperature: The range of temperatures to be expected on the surface of the
+                selected body in °C{' '}
+              </li>
+              <li>Radius: The radius size of the object in km </li>
+              <li>Gravity: The gravitational pull of the object in g </li>
+              <li>Average Orbital Speed (self-explanatory) in km / s </li>
+              <li>Satellites: How many satellites are orbiting around the object </li>
+              <li>Rings: Presence / absence of rings orbiting the object </li>
+              <li>
+                Periapsis: The closest distance that the object will achieve between itself and the
+                object that it’s been orbiting in km
+              </li>
+              <li>
+                Apoapsis: The furthest distance that the object will achieve between itself and the
+                object that it’s been orbiting in km{' '}
+              </li>
+              <li>
+                Orbit Duration: How long it takes for the object to complete a full orbit around the
+                object that it’s been orbiting, in terrestrial days{' '}
+              </li>
+              <li>
+                Day Duration: How long it takes for the object to complete a full turn on itself in
+                terrestrial days{' '}
+              </li>
+              <li>Current Speed: The current velocity of the object in the simulation. </li>
+              <li>
+                Distance to sun: The current distance between the sun and the object in the
+                simulation.{' '}
+              </li>
+            </ul>
+            <p className="mb-2">
+              The info tab also contains a description field, containing a few facts or curiosities
+              about the object.{' '}
             </p>
-
+            <p className="mb-2">
+              In the Sandbox Mode the info tab is slightly different: the user is allowed to modify
+              the “Static Properties”, as well as the planets description. It can also add new
+              “Static Properties” or remove old ones.{' '}
+            </p>
+            <p className="mb-2">
+              {' '}
+              In order to add new Properties, the blue “+” button should be pressed. If a property
+              needs to be removed, a click on the “-“ button on its left will do it. In case a
+              property or the description needs to be edited, double clicking on the text will let
+              the user modify the text. The following screenshot depicts an example of Info Tab in
+              the Sandbox mode with the relevant buttons.{' '}
+            </p>
+            <p className="mb-2">image placeholder </p>
             <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">1. Viewing Planet Orbits</h3>
+              <h3 className="text-lg font-semibold mb-2">Closing / Switching the Info Tab </h3>
               <p className="mb-2">
-                To observe the orbits of planets, click on a specific planet within the simulator
-                interface. A visual representation of the planet&apos;s orbit will be displayed, showing
-                its elliptical path around the sun.
+                There are multiple ways to close the info tab. The easiest one is to click on the
+                red “X” button on the top right corner of the tab.
+              </p>
+              <p className="mb-2">
+                A second way to do it is to click on the same planet list element (the one that was
+                clicked to open the tab in the first place) another time.
+              </p>
+              <p className="mb-2">
+                If the intention is to switch between tabs in a quick way, click on a different
+                planet list element. This will close the open tab and open a new one, this time with
+                the data of the newly clicked list element.
               </p>
             </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">2. Understanding Orbital Mechanics</h3>
-              <p className="mb-2">
-                The Planet Orbits visualization provides insights into the principles of orbital
-                mechanics, including:
-              </p>
-              <ul className="list-disc pl-6">
-                <li>
-                  Elliptical orbits: Learn about the shape and characteristics of planetary orbits.
-                </li>
-                <li>
-                  Orbital speed: Understand how planets move at different speeds along their orbits.
-                </li>
-                <li>
-                  Orbital inclination: Explore the tilt and orientation of planetary orbits relative
-                  to the ecliptic plane.
-                </li>
-              </ul>
-              <p className="mb-2">
-                You can observe these orbital features to gain a deeper understanding of the
-                dynamics of our solar system.
-              </p>
-            </div>
-
-            <p>
-              The Planet Orbits feature offers a fascinating insight into the complex dynamics of
-              planetary motion, allowing users to visualize and explore the paths of planets as they
-              travel through space.
-            </p>
           </div>
         );
       case 'MOverview':
@@ -436,8 +436,8 @@ export default function Home() {
             </p>
 
             <p className="mb-2">
-              Whether you&apos;re a student, a space enthusiast, or just curious, our simulator lets you
-              discover planets, moons, and more.
+              Whether you&apos;re a student, a space enthusiast, or just curious, our simulator lets
+              you discover planets, moons, and more.
             </p>
 
             <p>Get ready to explore the wonders of our solar system with us!</p>
@@ -501,6 +501,24 @@ export default function Home() {
                         Installation{' '}
                       </button>
                     </div>
+                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
+                      <button
+                        className="hover:text-gray-200 "
+                        onClick={() => setSelectedTopic('GSmainmenu')}
+                      >
+                        {' '}
+                        Main menu{' '}
+                      </button>
+                    </div>
+                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
+                      <button
+                        className="hover:text-gray-200 "
+                        onClick={() => setSelectedTopic('GSsettings')}
+                      >
+                        {' '}
+                        Settings{' '}
+                      </button>
+                    </div>
                   </li>
 
                   <li>
@@ -559,15 +577,6 @@ export default function Home() {
                       >
                         {' '}
                         Planet Information{' '}
-                      </button>
-                    </div>
-                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
-                      <button
-                        className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('CCPlanOrbit')}
-                      >
-                        {' '}
-                        Planet Orbits{' '}
                       </button>
                     </div>
                   </li>
