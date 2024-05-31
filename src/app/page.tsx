@@ -1,7 +1,6 @@
 import Particles from '@/components/Particles';
 import ParallaxSun from '@/components/ParallaxSun';
 
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-max bg-black max-w-full no-scrollbar ">
@@ -42,15 +41,14 @@ export default function Home() {
       </nav>
 
       <div className=" min-h-max z-11 ">
-      <div className="flex-1 flex items-center h-screen justify-center">
-  <div className="font-bold text-4xl p-4" style={{ backdropFilter: 'blur(4px)' }}>
-    Welcome to our Solar System!
-  </div>
-  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white text-lg">
-    Scroll down for more
-  </div>
-</div>
-
+        <div className="flex-1 flex items-center h-screen justify-center">
+          <div className="font-bold text-4xl p-4" style={{ backdropFilter: 'blur(4px)' }}>
+            Welcome to our Solar System!
+          </div>
+          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-white text-lg">
+            Scroll down for more
+          </div>
+        </div>
 
         <div className="flex-1 flex items-center h-screen z-5 justify-center relative">
           <Particles className="absolute inset-0 z-100 animate-fade-in" quantity={100} />
@@ -108,8 +106,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex-1  flex items-center bg-gradient-to-b from-blue-950 to-blue-800 h-screen justify-center">
-          <div className="relative isolate overflow-hidden backdrop-blur-sm  bg-white/5 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative flex-1 flex items-center bg-gradient-to-b from-blue-950 to-blue-800 h-screen justify-center">
+          <img src="/Erde.png" alt="Next.js Logo" className="absolute bottom-0 z-0" />
+          <div className="relative z-10 isolate overflow-hidden backdrop-blur-sm  bg-white/5 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Explore
