@@ -10,17 +10,14 @@ const CGPlanetInformation: React.FC = () => {
         Explorer Mode:
       </p>
 
-      <img src="/planetinformation1.png" alt="Next.js Logo" className="mb-4" />
-      <img src="/planetinformation2.png" alt="Next.js Logo" className="mb-4" />
+      <img src="/Planetinormation12.png" alt="Next.js Logo" className="mb-4" />
 
       <h3 className="text-lg font-semibold mt-4 mb-2">Properties Displayed:</h3>
 
       <p className="mb-2">
-        The application currently has twelve “Static Properties” (properties that would not be
-        changing in a real-life-like case) and two “Variable Properties” (properties that would
-        change depending on the time of measurement).
+      The explorer mode categorizes the properties into two main types:
       </p>
-      <p className="mb-2 mt-4">The Static Properties are:</p>
+      <p className="mb-2 mt-4">Editable Properties (properties that don’t have an impact on the simulation, aka for information only):</p>
       <ul className="list-disc pl-6">
         <li>Mass: The mass of the body in kg </li>
         <li>
@@ -53,7 +50,7 @@ const CGPlanetInformation: React.FC = () => {
           terrestrial days{' '}
         </li>
       </ul>
-      <p className="mb-2 mt-4">The two “Variable Properties” are:</p>
+      <p className="mb-2 mt-4"> Live Stats (properties that change over time)</p>
       <ul className="list-disc pl-6">
         <li>Current Speed: The current velocity of the object in the simulation. </li>
         <li>
@@ -63,24 +60,42 @@ const CGPlanetInformation: React.FC = () => {
 
       <p className="mb-2 mt-4">
         The Info Tab also includes a description field, which contains interesting facts or
-        curiosities about the object.
-      </p>
-
-      <h3 className="text-lg font-semibold mt-4 mb-2">Interactive Features in Sandbox Mode:</h3>
-
-      <p className="mb-2">
-        In the Sandbox Mode the info tab is slightly different: the user is allowed to modify the
-        “Static Properties”, as well as the planets description. It can also add new “Static
-        Properties” or remove old ones.
+        curiosities about the object. The interactive features in the Explorer mode are the
+        following:
       </p>
       <ul className="list-disc pl-6">
-        <li>Add New Property: Press the blue <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">+ button</span>  to introduce a new static property.</li>
-        <li>Remove Property: Click the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">- button</span>  next to a property to remove it.</li>
+        <li>
+          • Add New Property: Press the blue{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            + button
+          </span>{' '}
+          to introduce a new editable property.{' '}
+        </li>
+        <li>
+          Remove Property: Click the{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            - button
+          </span>{' '}
+          next to a property to remove it.{' '}
+        </li>
         <li>
           Edit Property or Description: Double-click on any text to edit the property value or the
           description itself.
         </li>
       </ul>
+      <p className="mb-2 mt-4">
+        The eventual changes in properties and descriptions are partially saved: the values are
+        reset to default as soon as the user goes back to the main menu or closes the program. Until
+        then, all changes will be saved in the respective info tabs, even if the user switches
+        between planets.
+      </p>
+
+      <h3 className="text-lg font-semibold mt-4 mb-2">Interactive Features in Sandbox Mode:</h3>
+
+      <p className="mb-2">
+        In the Sandbox Mode the info tab is slightly different: there is a new category of
+        properties, the Variable ones, which, when changed, will impact the simulation.
+      </p>
       <p className="mb-2">
         The following screenshot depicts an example of Info Tab in the Sandbox mode with the
         relevant buttons.{' '}
@@ -91,8 +106,11 @@ const CGPlanetInformation: React.FC = () => {
       <div className="mb-4">
         <h3 className="text-lg font-semibold mb-2">Closing / Switching the Info Tab </h3>
         <p className="mb-2">
-          Close the Info Tab: You can click the red <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">X button</span>  in the top right corner or click on
-          the same planet in the planet list again.
+          Close the Info Tab: You can click the red{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            X button
+          </span>{' '}
+          in the top right corner or click on the same planet in the planet list again.
         </p>
         <p className="mb-2">
           Switch between Tabs: Clicking on a different planet in the list will close the current tab

@@ -8,16 +8,46 @@ const CGTimeControl: React.FC = () => {
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
           Play/Pause button
         </span>{' '}
-        that allows you to stop or start the simulation. Positioned at the top left, there is a
-        slider that enables you to control the speed of the simulation. The slider scale ranges from
-        1 to 20, with the selected number displayed above it. In Explorer Mode, below the slider,
-        you can also see the current date of the simulation. Each increment on the{' '}
+        that allows you to stop or start the simulation. Positioned at the top left, there is a{' '}
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          Slider
+          Simulationspeed Slider
         </span>{' '}
-        corresponds to one day per second in terms of planet movement speed.
+        that enables you to control the speed of the simulation.
       </p>
+      <p className="mb-4">
+        The selected speed will be displayed next to it. In Explorer Mode, top left, you can also
+        see the current date of the simulation. You can click on the date and a window will pop up.
+        There you can choose a date and time. You can click on {' '}
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+          Submit
+        </span>{' '}
+        and the simulation will move to this time. Additionally, you have two buttons {' '}
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+          {'<<'}
+        </span>{' '}
+        and{' '}
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+          {'>>'}
+        </span>{' '}
+      </p>
+      <p className="mb-4">
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+          {'<<'}
+        </span>{' '}
+        will go back to the time and you will take a journey to the past while{' '}
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+          {'>>'}
+        </span>{' '}
+        will show you the future! Finally, you have a {' '}
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+           Real Time Checkmark
+        </span>{' '}
+        Here the simulation will ignore the simulation slider and the speed will be adjusted to the
+        real lifetime.
+      </p>
+
       <img src="/timecontrol1.png" alt="Next.js Logo" className="mb-4" />
+      <img src="/timecontrol2.png" alt="Next.js Logo" className="mb-4" />
     </div>
   );
 };

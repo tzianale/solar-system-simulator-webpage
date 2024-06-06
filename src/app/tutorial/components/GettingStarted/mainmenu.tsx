@@ -27,7 +27,7 @@ const GSmainmenu: React.FC = () => {
           <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
             Settings
           </span>{' '}
-          brings up a window where you can graphics settings or switch to fullscreen.
+          brings up a window where you can adjust graphics settings.
         </li>
         <li className="mb-2">
           Quit: Click on{' '}

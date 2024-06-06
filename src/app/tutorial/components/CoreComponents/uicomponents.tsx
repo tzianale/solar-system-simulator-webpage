@@ -5,35 +5,27 @@ const CGUIComponents: React.FC = () => {
 
       <div className=" rounded-lg p-6  mb-6">
         <p className="mb-4">
-          The following image depicts the starting state of the simulation. The program has four
-          interactable elements:{' '}
-          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-            Speed Slider
-          </span>{' '}
-          ,{' '}
-          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-            Play/Pause button
-          </span>{' '}
-          ,{' '}
-          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-            Escape button
-          </span>{' '}
-          , as well as a third button on the lower part of the screen with an{' '}
-          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-            Arrow
-          </span>{' '}
-          pointing upwards.{' '}
+          The following image depicts the starting state of the explorer mode. The UI has seven
+          interactable elements:
         </p>
+        <ul className="list-disc pl-6 mb-6">
+          <li className="mb-2">Real time toggle</li>
+          <li className="mb-2">Sumulation speed slider</li>
+          <li className="mb-2">Play / Pause button</li>
+          <li className="mb-2">Backwards button ( {"<<"} )</li>
+          <li className="mb-2">Forward button ( {">>"} )</li>
+          <li className="mb-2">Escape button</li>
+          <li className="mb-2">Planet list button, as an up-pointing arrow</li>
+        </ul>
+
         <img src="/bild1.png" alt="Next.js Logo" className="mb-4" />
         <ul className="list-disc pl-6 mb-6">
           <li className="mb-2">
-            Simulation speed slider: You can use the{' '}
-            <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-              Speed Slider
-            </span>{' '}
-            to increase the time steps, which allows you to see planetary movements that would
-            normally take years in just seconds. – More details about the simulation speed will
-            follow in the “Time Controls” chapter –
+            Real time toggle: Activate the real time mode by pressing this <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+              Checkmark
+            </span>{' '}. This will run
+            the simulation in real time, which means, it will take earth 24 hours of running your
+            computer with the application opened to do one full rotation around itself
           </li>
           <li className="mb-2">
             Play / Pause button: Clicking the{' '}
@@ -44,10 +36,16 @@ const CGUIComponents: React.FC = () => {
             planetary positions closely.
           </li>
           <li className="mb-2">
-            Forward button: The celestial body will move normally, and you can explore the future.
+            Forward button: Clicking the{' '}
+            <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+              Forward button
+            </span>{' '}  will move the simulation normally, allowing you to explore the future.
           </li>
           <li className="mb-2">
-            Backward button: The celestial body will move in reverse, and you can explore the past.
+            Backward button: Clicking the{' '}
+            <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+              Backward button
+            </span>{' '} will move the simulation back in time, essentially letting you rewind the solar system.
           </li>
           <li className="mb-2">
             Arrow button: Click the{' '}
@@ -62,8 +60,7 @@ const CGUIComponents: React.FC = () => {
             <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
               Escape button
             </span>{' '}
-            stops the simulation and takes you back to the main menu, where you can quit the program
-            or start a new simulation.
+            stops the simulation and takes you back to the main menu, where you can quit the program or start a new simulation mode
           </li>
         </ul>
 
