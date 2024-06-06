@@ -1,9 +1,9 @@
 const CGAddNewPlanets: React.FC = () => {
   return (
-    <div className="max-w-xl mx-auto my-8 p-4">
+    <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
       <h2 className="text-xl font-semibold mb-2">Adding New Celestial Bodies</h2>
 
-      <p className="mb-4">
+      <p className="mb-4 ">
         In Sandbox mode, you can create new celestial bodies in the simulation to test the
         gravitational impact of different bodies with varying masses. To do so, click the{' '}
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
@@ -16,7 +16,7 @@ const CGAddNewPlanets: React.FC = () => {
         for your new celestial body:{' '}
       </p>
 
-      <ul className="list-disc pl-6">
+      <ul className="list-disc pl-6 mb-4">
         <li>Name: The name of your celestial body.</li>
         <li>Type: The type of celestial body (Sun, Planet, Moon).</li>
         <li>Mass: The mass relative to Earths mass; must be a positive number.</li>
@@ -30,7 +30,7 @@ const CGAddNewPlanets: React.FC = () => {
         <li>Color: A new window opens where you can choose the color of your celestial body. </li>
       </ul>
       <img src="/addnewbody.png" alt="addnewplanet" />
-      <p className="mb-4">
+      <p className="mb-4 mt-4">
         In All fields must be filled out with valid values. If any fields are invalid, the
         corresponding field will be highlighted in red.{' '}
       </p>

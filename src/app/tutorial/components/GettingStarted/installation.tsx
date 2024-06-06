@@ -1,6 +1,6 @@
 const GSInstallation: React.FC = () => {
   return (
-    <div className="max-w-xl mx-auto my-8">
+    <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
       <h2 className="text-xl font-semibold mb-2">Installation Instructions</h2>
 
       <div className="mb-4">

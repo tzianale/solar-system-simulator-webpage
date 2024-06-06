@@ -1,6 +1,6 @@
 const GSmainmenu: React.FC = () => {
   return (
-    <div className="max-w-xl mx-auto my-8">
+    <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
       <h2 className="text-2xl font-semibold mb-4">Main menu </h2>
       <p className="mb-2">
         By starting the application, the main menu is the first screen that appears. It presents

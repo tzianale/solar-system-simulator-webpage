@@ -49,7 +49,7 @@ export default function Home() {
 
       default:
         return (
-          <div className="max-w-xl mx-auto my-8 p-4">
+          <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
             <h2 className="text-xl font-semibold mb-2">
               Welcome to the Solar System Simulator Tutorial
             </h2>
@@ -272,7 +272,7 @@ export default function Home() {
               </nav>
             </aside>
 
-            <div className="flex-grow flex justify-center">{renderContent()}</div>
+            <div className="flex-grow flex justify-center w-full h-full">{renderContent()}</div>
           </div>
         </div>
       </div>
