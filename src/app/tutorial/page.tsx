@@ -9,7 +9,6 @@ import CGCameraPresets from './components/CoreComponents/camerapresets';
 import CGPlanetInformation from './components/CoreComponents/planetinformation';
 import CGTimeControl from './components/CoreComponents/timecontrol';
 import CGUIComponents from './components/CoreComponents/uicomponents';
-import CGAddNewPlanets from './components/CoreComponents/addnewplanet';
 import SMcreatecelestialbodies from './components/SandboxMode/createcelestialbodies';
 
 export default function Home() {
@@ -33,8 +32,6 @@ export default function Home() {
         return <CGTimeControl />;
       case 'CCPlanInfo':
         return <CGPlanetInformation />;
-      case 'CCAddNewPlanets':
-        return <CGAddNewPlanets />;
       case 'MOverview':
         return <div>Overview</div>;
       case 'MSimulator':
@@ -188,15 +185,6 @@ export default function Home() {
                       >
                         {' '}
                         Planet Information{' '}
-                      </button>
-                    </div>
-                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
-                      <button
-                        className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('CCAddNewPlanets')}
-                      >
-                        {' '}
-                        Add new Planets{' '}
                       </button>
                     </div>
                   </li>

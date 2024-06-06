@@ -10,14 +10,17 @@ const CGPlanetInformation: React.FC = () => {
         Explorer Mode:
       </p>
 
-      <img src="/Planetinormation12.png" alt="Next.js Logo" className="mb-4" />
+      <div className=" flex justify-center ">
+        <img src="/Planetinormation12.png" alt="Next.js Logo" className="mb-4" />
+      </div>
 
       <h3 className="text-lg font-semibold mt-4 mb-2">Properties Displayed:</h3>
 
-      <p className="mb-2">
-      The explorer mode categorizes the properties into two main types:
+      <p className="mb-2">The explorer mode categorizes the properties into two main types:</p>
+      <p className="mb-2 mt-4">
+        Editable Properties (properties that don’t have an impact on the simulation, aka for
+        information only):
       </p>
-      <p className="mb-2 mt-4">Editable Properties (properties that don’t have an impact on the simulation, aka for information only):</p>
       <ul className="list-disc pl-6">
         <li>Mass: The mass of the body in kg </li>
         <li>
@@ -65,7 +68,7 @@ const CGPlanetInformation: React.FC = () => {
       </p>
       <ul className="list-disc pl-6">
         <li>
-          • Add New Property: Press the blue{' '}
+          Add New Property: Press the blue{' '}
           <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
             + button
           </span>{' '}
@@ -101,8 +104,9 @@ const CGPlanetInformation: React.FC = () => {
         relevant buttons.{' '}
       </p>
 
-      <img src="/planetinformation3.png" alt="Next.js Logo" className="mb-4" />
-
+      <div className=" flex justify-center ">
+        <img src="/planetinformation3.png" alt="Next.js Logo" className="mb-4" />
+      </div>
       <div className="mb-4">
         <h3 className="text-lg font-semibold mb-2">Closing / Switching the Info Tab </h3>
         <p className="mb-2">

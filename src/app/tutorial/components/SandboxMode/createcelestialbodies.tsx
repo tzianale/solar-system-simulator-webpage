@@ -1,7 +1,7 @@
 const SMcreatecelestialbodies: React.FC = () => {
 
     return (
-        <div className="max-w-xl mx-auto">
+        <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
             <h2 className="text-2xl font-semibold mb-4">Create Celestial Bodies</h2>
             <p className="mb-2">
                 In Sandbox mode, you can create new celestial bodies in the simulation to test the gravitational impact of different bodies with varying masses. To do so, click the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Add New Body</span> button at the top of the UI.

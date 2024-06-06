@@ -34,7 +34,7 @@ const CGCameraPresets: React.FC = () => {
         </p>
       </div>
       <div className="mb-4">
-        <h3 className="text-lg font-semibold mb-2">•	Diagonal View</h3>
+        <h3 className="text-lg font-semibold mb-2">Diagonal View</h3>
         <p className="mb-2">
           {' '}
           Press the{' '}

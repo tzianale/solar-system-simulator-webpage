@@ -17,11 +17,11 @@ const CGTimeControl: React.FC = () => {
       <p className="mb-4">
         The selected speed will be displayed next to it. In Explorer Mode, top left, you can also
         see the current date of the simulation. You can click on the date and a window will pop up.
-        There you can choose a date and time. You can click on {' '}
+        There you can choose a date and time. You can click on{' '}
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
           Submit
         </span>{' '}
-        and the simulation will move to this time. Additionally, you have two buttons {' '}
+        and the simulation will move to this time. Additionally, you have two buttons{' '}
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
           {'<<'}
         </span>{' '}
@@ -38,16 +38,19 @@ const CGTimeControl: React.FC = () => {
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
           {'>>'}
         </span>{' '}
-        will show you the future! Finally, you have a {' '}
+        will show you the future! Finally, you have a{' '}
         <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-           Real Time Checkmark
+          Real Time Checkmark
         </span>{' '}
         Here the simulation will ignore the simulation slider and the speed will be adjusted to the
         real lifetime.
       </p>
-
-      <img src="/timecontrol1.png" alt="Next.js Logo" className="mb-4" />
-      <img src="/timecontrol2.png" alt="Next.js Logo" className="mb-4" />
+      <div className=" flex justify-center ">
+        <img src="/timecontrol1.png" width={900} alt="Next.js Logo" className="mb-4 " />
+      </div>
+      <div className=" flex justify-center ">
+        <img src="/timecontrol2.png" width={400} alt="Next.js Logo" className="mb-4" />
+      </div>
     </div>
   );
 };
