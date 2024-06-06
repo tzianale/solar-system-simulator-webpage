@@ -20,7 +20,7 @@ const CGPlanetInformation: React.FC = () => {
         changing in a real-life-like case) and two “Variable Properties” (properties that would
         change depending on the time of measurement).
       </p>
-      <p className="mb-2 mt-4">The "Static Properties” are:</p>
+      <p className="mb-2 mt-4">The Static Properties are:</p>
       <ul className="list-disc pl-6">
         <li>Mass: The mass of the body in kg </li>
         <li>
@@ -74,8 +74,8 @@ const CGPlanetInformation: React.FC = () => {
         Properties” or remove old ones.
       </p>
       <ul className="list-disc pl-6">
-        <li>Add New Property: Press the blue "+" button to introduce a new static property.</li>
-        <li>Remove Property: Click the "-" button next to a property to remove it.</li>
+        <li>Add New Property: Press the blue <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">+ button</span>  to introduce a new static property.</li>
+        <li>Remove Property: Click the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">- button</span>  next to a property to remove it.</li>
         <li>
           Edit Property or Description: Double-click on any text to edit the property value or the
           description itself.
@@ -91,7 +91,7 @@ const CGPlanetInformation: React.FC = () => {
       <div className="mb-4">
         <h3 className="text-lg font-semibold mb-2">Closing / Switching the Info Tab </h3>
         <p className="mb-2">
-          Close the Info Tab: You can click the red "X" button in the top right corner or click on
+          Close the Info Tab: You can click the red <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">X button</span>  in the top right corner or click on
           the same planet in the planet list again.
         </p>
         <p className="mb-2">

@@ -19,10 +19,10 @@ const CGPlanetInformation: React.FC = () => {
       <ul className="list-disc pl-6">
         <li>Name: The name of your celestial body.</li>
         <li>Type: The type of celestial body (Sun, Planet, Moon).</li>
-        <li>Mass: The mass relative to Earth's mass; must be a positive number.</li>
-        <li>Diameter: The diameter relative to Earth's diameter; must be a positive number.</li>
+        <li>Mass: The mass relative to Earths mass; must be a positive number.</li>
+        <li>Diameter: The diameter relative to Earths diameter; must be a positive number.</li>
         <li>
-          Position: XYZ coordinates relative to the universe's center (1 Astronomical Unit = 1000).{' '}
+          Position: XYZ coordinates relative to the universes center (1 Astronomical Unit = 1000).{' '}
         </li>
         <li>
           Initial Velocity: XYZ values in km/s for the starting velocity of your celestial body.{' '}
