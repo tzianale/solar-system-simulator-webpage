@@ -9,6 +9,7 @@ import CGCameraPresets from './components/CoreComponents/camerapresets';
 import CGPlanetInformation from './components/CoreComponents/planetinformation';
 import CGTimeControl from './components/CoreComponents/timecontrol';
 import CGUIComponents from './components/CoreComponents/uicomponents';
+import CGAddNewPlanets from './components/CoreComponents/addnewplanet';
 
 export default function Home() {
   const [selecedTopic, setSelectedTopic] = useState('');
@@ -16,37 +17,23 @@ export default function Home() {
   const renderContent = () => {
     switch (selecedTopic) {
       case 'GSinstallation':
-        return (
-          <GSInstallation />
-        );
+        return <GSInstallation />;
       case 'GSmainmenu':
-        return (
-          <GSmainmenu />
-        );
+        return <GSmainmenu />;
       case 'GSsettings':
-        return (
-          <GSSettings />
-        );
+        return <GSSettings />;
       case 'CCuicomponents':
-        return (
-          <CGUIComponents />
-        );
+        return <CGUIComponents />;
       case 'CCCammov':
-        return (
-          <CGCameraMovement />
-        );
+        return <CGCameraMovement />;
       case 'CCCamPre':
-        return (
-          <CGCameraPresets />
-        );
+        return <CGCameraPresets />;
       case 'CCTimeCon':
-        return (
-          <CGTimeControl />
-        );
+        return <CGTimeControl />;
       case 'CCPlanInfo':
-        return (
-          <CGPlanetInformation />
-        );
+        return <CGPlanetInformation />;
+      case 'CCAddNewPlanets':
+        return <CGAddNewPlanets />;
       case 'MOverview':
         return <div>Overview</div>;
       case 'MSimulator':
@@ -68,10 +55,8 @@ export default function Home() {
             </h2>
 
             <p className="mb-2">
-              This guide will help you learn how to
-              use our simulator to explore space.
+              This guide will help you learn how to use our simulator to explore space.
             </p>
-
           </div>
         );
     }
@@ -199,6 +184,15 @@ export default function Home() {
                       >
                         {' '}
                         Planet Information{' '}
+                      </button>
+                    </div>
+                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
+                      <button
+                        className="hover:text-gray-200 "
+                        onClick={() => setSelectedTopic('CCAddNewPlanets')}
+                      >
+                        {' '}
+                        Add new Planets{' '}
                       </button>
                     </div>
                   </li>

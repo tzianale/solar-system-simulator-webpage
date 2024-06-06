@@ -1,24 +1,18 @@
 const CGUIComponents: React.FC = () => {
   return (
     <div className="max-w-xl mx-auto my-8">
-      <h2 className="text-2xl font-semibold mb-4">Solar System Simulator UI Components </h2>
+      <h2 className="text-2xl font-semibold mb-4">UI Components </h2>
 
       <div className=" rounded-lg p-6  mb-6">
-        <h3 className="text-lg font-semibold mb-2">Planet Selection</h3>
-        <p className="mb-4">
-          The User Interface (UI) is one the most important things to understand if you want to use
-          a program correctly. Although most UI elements are intuitive, this short tutorial will
-          help the user to completely understand each element of the UI.
-        </p>
-        <p className="mb-4">
+         <p className="mb-4">
           The following image depicts the starting state of the simulation. The program has four
-          interactable elements: the speed slider, the Play / Pause button, the Escape button, as
-          well as a third button on the lower part of the screen with an arrow pointing upwards.{' '}
+          interactable elements: <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Speed Slider</span> , <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Play/Pause button</span> , <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Escape button</span> , as
+          well as a third button on the lower part of the screen with an <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Arrow</span>  pointing upwards.{' '}
         </p>
-        <img src="/Bild1.jpg" alt="Next.js Logo" className="mb-4" />
-        <ol className="list-decimal pl-6 mb-6">
+        <img src="/bild1.png" alt="Next.js Logo" className="mb-4" />
+        <ul className="list-disc pl-6 mb-6">
           <li className="mb-2">
-            Simulation speed slider: You can use the Simulation Speed Slider to increase the time
+            Simulation speed slider: You can use the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Speed Slider</span>  to increase the time
             steps, which allows you to see planetary movements that would normally take years in
             just seconds. – More details about the simulation speed will follow in the “Time
             Controls” chapter –
@@ -41,7 +35,7 @@ const CGUIComponents: React.FC = () => {
             Escape button: Clicking the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Escape button</span>  stops the simulation and takes you back to the
             main menu, where you can quit the program or start a new simulation.
           </li>
-        </ol>
+        </ul>
 
         <img src="/gettingstarted2.png" alt="Next.js Logo" className="mb-4" />
 
@@ -50,7 +44,7 @@ const CGUIComponents: React.FC = () => {
           scrolling with the mouse wheel, or by dragging the planets to the left. Each element in
           the list is interactable:
         </p>
-        <ol className="list-decimal pl-6 mb-6">
+        <ol className="list-disc pl-6 mb-6">
           <li className="mb-2">
             Single Left Click: will open an info tab with details about the specific planet
             (details about the Planet Info Tab will be explained in the following chapter)

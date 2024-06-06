@@ -1,5 +1,4 @@
 import Particles from '@/components/Particles';
-import ParallaxSun from '@/components/ParallaxSun';
 
 export default function Home() {
   return (
@@ -34,7 +33,6 @@ export default function Home() {
               >
                 About
               </a>
-              <ParallaxSun />
             </div>
           </div>
         </div>
