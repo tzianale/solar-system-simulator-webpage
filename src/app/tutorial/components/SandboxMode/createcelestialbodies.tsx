@@ -12,9 +12,9 @@ const SMcreatecelestialbodies: React.FC = () => {
             <ol className="list-disc pl-6 mb-6">
                 <li className="mb-2"><strong>Name:</strong> The name of your celestial body.</li>
                 <li className="mb-2"><strong>Type:</strong> The type of celestial body (Sun, Planet, Moon).</li>
-                <li className="mb-2"><strong>Mass:</strong> The mass relative to Earth's mass; must be a positive number.</li>
-                <li className="mb-2"><strong>Diameter:</strong> The diameter relative to Earth's diameter; must be a positive number.</li>
-                <li className="mb-2"><strong>Position:</strong> XYZ coordinates relative to the universe's center (1 Astronomical Unit = 1000).</li>
+                <li className="mb-2"><strong>Mass:</strong> The mass relative to Earth&apos;s mass; must be a positive number.</li>
+                <li className="mb-2"><strong>Diameter:</strong> The diameter relative to Earth&apos;s diameter; must be a positive number.</li>
+                <li className="mb-2"><strong>Position:</strong> XYZ coordinates relative to the universe&apos;s center (1 Astronomical Unit = 1000).</li>
                 <li className="mb-2"><strong>Initial Velocity:</strong> XYZ values in km/s for the starting velocity of your celestial body.</li>
                 <li className="mb-2"><strong>Color:</strong> A new window opens where you can choose the color of your celestial body.</li>
             </ol>
