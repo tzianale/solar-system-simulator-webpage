@@ -10,6 +10,7 @@ import CGPlanetInformation from './components/CoreComponents/planetinformation';
 import CGTimeControl from './components/CoreComponents/timecontrol';
 import CGUIComponents from './components/CoreComponents/uicomponents';
 import CGAddNewPlanets from './components/CoreComponents/addnewplanet';
+import SMcreatecelestialbodies from './components/SandboxMode/createcelestialbodies';
 
 export default function Home() {
   const [selecedTopic, setSelectedTopic] = useState('');
@@ -46,6 +47,9 @@ export default function Home() {
         return <div>UI Components</div>;
       case 'SandCamMov':
         return <div>Camera Movement</div>;
+      case 'SandBodCrea':
+        return (<SMcreatecelestialbodies/>)
+
 
       default:
         return (
@@ -98,10 +102,10 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="flex flex-col items-center pt-40 justify-center gap-4">
+      <div className="flex flex-col items-center pt-28 justify-center gap-4">
         <div className="container flex flex-col mx-auto backdrop-blur-sm shadow-2xl bg-white/5">
           <div className="flex">
-            <aside className="bg-gray-800 pt-32 text-white w-48 min-h-screen ">
+            <aside className="bg-gray-800 pt-5 text-white w-48 min-h-screen ">
               <nav>
                 <ul className="space-y-6 ">
                   <li>
@@ -265,6 +269,15 @@ export default function Home() {
                       >
                         {' '}
                         Camera Movement{' '}
+                      </button>
+                    </div>
+                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
+                      <button
+                        className="hover:text-gray-200 "
+                        onClick={() => setSelectedTopic('SandBodCrea')}
+                      >
+                        {' '}
+                        Create Celestial Body{' '}
                       </button>
                     </div>
                   </li>
