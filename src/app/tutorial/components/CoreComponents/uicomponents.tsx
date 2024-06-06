@@ -15,7 +15,7 @@ const CGUIComponents: React.FC = () => {
           interactable elements: the speed slider, the Play / Pause button, the Escape button, as
           well as a third button on the lower part of the screen with an arrow pointing upwards.{' '}
         </p>
-        <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+        <img src="/Bild1.jpg" alt="Next.js Logo" className="mb-4" />
         <ol className="list-decimal pl-6 mb-6">
           <li className="mb-2">
             Simulation speed slider: You can use the Simulation Speed Slider to increase the time
@@ -24,17 +24,8 @@ const CGUIComponents: React.FC = () => {
             Controls” chapter –
           </li>
           <li className="mb-2">
-            Play / Pause button: The Play/ Pause button allows you to pause or resume the
+            Play / Pause button: Clicking the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Play/Pause button</span>  allows you to pause or resume the
             simulation, useful for taking screenshots or examining planetary positions closely.
-          </li>
-          <li className="mb-2">
-            Escape button: Clicking the Escape button stops the simulation and takes you back to the
-            main menu, where you can quit the program or start a new simulation.
-          </li>
-          <li className="mb-2">
-            The arrow button: if this button is pressed, a list of planets will raise from the lower
-            part of the screen, as depicted in the following screenshot. One more click, and the
-            list will lower itself to the original position.{' '}
           </li>
           <li className="mb-2">
             Forward button: The celestial body will move normally, and you can explore the future.
@@ -43,12 +34,16 @@ const CGUIComponents: React.FC = () => {
             Backward button: The celestial body will move in reverse, and you can explore the past.
           </li>
           <li className="mb-2">
-            Arrow button: Click the arrow button to toggle a list of planets from the bottom of the
+            Arrow button: Click the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Arrow button</span>  to toggle a list of planets from the bottom of the
             screen. Click again to retract the list.
+          </li>
+          <li className="mb-2">
+            Escape button: Clicking the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Escape button</span>  stops the simulation and takes you back to the
+            main menu, where you can quit the program or start a new simulation.
           </li>
         </ol>
 
-        <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+        <img src="/gettingstarted2.png" alt="Next.js Logo" className="mb-4" />
 
         <p className="mb-4">
           The list is scrollable, either by moving the white bar on the bottom to the right,
@@ -57,10 +52,10 @@ const CGUIComponents: React.FC = () => {
         </p>
         <ol className="list-decimal pl-6 mb-6">
           <li className="mb-2">
-            • Single Left Click: will open an info tab with details about the specific planet
+            Single Left Click: will open an info tab with details about the specific planet
             (details about the Planet Info Tab will be explained in the following chapter)
           </li>
-          <li className="mb-2">• Two Clicks: will move the camera to focus on the planet.</li>
+          <li className="mb-2">Two Clicks: will move the camera to focus on the planet.</li>
         </ol>
       </div>
     </div>

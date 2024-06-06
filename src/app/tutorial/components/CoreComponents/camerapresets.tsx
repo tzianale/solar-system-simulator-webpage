@@ -12,7 +12,7 @@ const CGCameraPresets: React.FC = () => {
         <div className="mb-4">
           <h3 className="text-lg font-semibold mb-2">Bird's Eye View (Numpad 1)</h3>
           <p className="mb-2">
-            Press the '1' key on the numpad to switch to a bird's eye view. This perspective
+            Press the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">1 key</span>  on the numpad to switch to a bird's eye view. This perspective
             provides a top-down view centered around the current pivot point, ideal for getting
             a comprehensive overview of the solar system.{' '}
           </p>
@@ -22,7 +22,7 @@ const CGCameraPresets: React.FC = () => {
           <h3 className="text-lg font-semibold mb-2">Side View (Numpad 3)</h3>
           <p className="mb-2">
             {' '}
-            Press the '3' key on the numpad to switch to a side view. This perspective offers a
+            Press the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">3 key</span>  on the numpad to switch to a side view. This perspective offers a
             lateral view of the current pivot point, useful for examining the spatial
             relationships between planets.{' '}
           </p>

@@ -10,8 +10,8 @@ const CGPlanetInformation: React.FC = () => {
         Explorer Mode:
       </p>
 
-      <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
-      <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+      <img src="/planeteninformation1.png" alt="Next.js Logo" className="mb-4" />
+      <img src="/planeteninformation2.png" alt="Next.js Logo" className="mb-4" />
 
       <h3 className="text-lg font-semibold mt-4 mb-2">Properties Displayed:</h3>
 
@@ -86,7 +86,7 @@ const CGPlanetInformation: React.FC = () => {
       </ul>
       <p className="mb-2">The following screenshot depicts an example of Info Tab in the Sandbox mode with the relevant buttons. </p>
 
-      <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+      <img src="/planeteninformation3.png" alt="Next.js Logo" className="mb-4" />
 
       <div className="mb-4">
         <h3 className="text-lg font-semibold mb-2">Closing / Switching the Info Tab </h3>

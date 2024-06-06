@@ -43,72 +43,6 @@ export default function Home() {
         return (
           <CGTimeControl />
         );
-      case 'CCPlanSelect':
-        return (
-          <div className="max-w-xl mx-auto my-8 p-4">
-            <h2 className="text-xl font-semibold mb-2">Planet Selection</h2>
-
-            <p className="mb-4">
-              The Planet Selection feature in the Solar System Simulator allows you to easily
-              navigate between different celestial bodies within the solar system. Here&apos;s how
-              you can use it:
-            </p>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">1. Accessing the Planet Selection</h3>
-              <p className="mb-2">
-                To access the Planet Selection window, look for the small icon or button located at
-                the bottom of the simulator interface. Clicking on this icon will open the Planet
-                Selection window.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">2. Selecting a Planet</h3>
-              <p className="mb-2">
-                Once the Planet Selection window is open, you&apos;ll see a list of available
-                planets in the solar system. Each planet will be represented by its name and
-                possibly a small icon or image for easy identification.
-              </p>
-              <p className="mb-2">
-                To select a planet, simply click on its name or icon in the Planet Selection window.
-                The selected planet will be highlighted, indicating that it&apos;s ready for further
-                action.
-              </p>
-              <p className="mb-2">
-                If you want to jump directly to the selected planet, double-click on its name or
-                icon. The simulator will adjust the camera position and focus on the selected
-                planet, allowing you to explore it up close.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">3. Exploring Planets</h3>
-              <p className="mb-2">
-                Once you&apos;ve selected a planet, you can use the camera controls to navigate
-                around it and observe its features. Zoom in to see surface details, pan around to
-                explore different areas, and rotate the camera to view the planet from different
-                angles.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold mb-2">4. Additional Information</h3>
-              <p className="mb-2">
-                Some planets may have additional information available, such as fun facts, trivia,
-                or scientific data. You can access this information by clicking on the planet or
-                using any available tooltips or information panels in the simulator interface.
-              </p>
-            </div>
-
-            <p>
-              The Planet Selection feature makes it easy to explore and learn about the various
-              planets in our solar system. Whether you&apos;re interested in Earth, Mars, Jupiter,
-              or any other celestial body, you can quickly navigate to it and start your cosmic
-              journey!
-            </p>
-          </div>
-        );
       case 'CCPlanInfo':
         return (
           <CGPlanetInformation />
@@ -134,16 +68,10 @@ export default function Home() {
             </h2>
 
             <p className="mb-2">
-              Welcome to our Solar System Simulator tutorial! This guide will help you learn how to
+              This guide will help you learn how to
               use our simulator to explore space.
             </p>
 
-            <p className="mb-2">
-              Whether you&apos;re a student, a space enthusiast, or just curious, our simulator lets
-              you discover planets, moons, and more.
-            </p>
-
-            <p>Get ready to explore the wonders of our solar system with us!</p>
           </div>
         );
     }
@@ -262,15 +190,6 @@ export default function Home() {
                       >
                         {' '}
                         Time Controls{' '}
-                      </button>
-                    </div>
-                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
-                      <button
-                        className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('CCPlanSelect')}
-                      >
-                        {' '}
-                        Planet Selection{' '}
                       </button>
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">

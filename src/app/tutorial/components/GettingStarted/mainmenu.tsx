@@ -7,7 +7,7 @@ const GSmainmenu: React.FC = () => {
               By starting the application, the main menu is the first screen that appears. It
               presents four clickable buttons:
             </p>
-            <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+            <img src="/mainmenu1.png" alt="Next.js Logo" className="mb-4" />
             <ol className="list-decimal pl-6 mb-6">
               <li className="mb-2">Explorer: Click the Explorer button to start the realistic Explorer Mode.</li>
               <li className="mb-2">Sandbox: Click the Sandbox button to enter Sandbox Mode, where you can play with the planets and manipulate them.</li>

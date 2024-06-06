@@ -7,8 +7,7 @@ const GSInstallation: React.FC = () => {
         <div className="mb-4">
           <h3 className="text-lg font-semibold mb-2">1. Download the Simulator: </h3>
           <p className="mb-2">
-            Download the latest version of the solar system simulator under «Downloads» or click
-            here[HYPERLINK zum Download].{' '}
+            Download the latest version of the solar system simulator <a href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/archive/refs/heads/main.zip" className="bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">here</a>.{' '}
           </p>
         </div>
 
@@ -23,7 +22,7 @@ const GSInstallation: React.FC = () => {
         <div className="mb-4">
           <h3 className="text-lg font-semibold mb-2">3. Run the Simulator: </h3>
           <p className="mb-2">
-          •	Navigate to the extracted folder and find the executable file named <span style={{fontWeight: 'bold'}}>SolarSystemSimulator.exe</span>
+          Navigate to the extracted folder and find the executable file named <span style={{fontWeight: 'bold'}}>SolarSystemSimulator.exe</span>
           </p>
           <p className="mb-2">Double-click the <span style={{fontWeight: 'bold'}}>.exe</span> file to launch the simulator. </p>
         </div>
