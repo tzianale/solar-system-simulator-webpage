@@ -6,7 +6,7 @@ const GSmainmenu: React.FC = () => {
         By starting the application, the main menu is the first screen that appears. It presents
         four clickable buttons:
       </p>
-      <img src="/mainmenu1.png" alt="Next.js Logo" className="mb-4" />
+      <img src="/MainMenu1.png" alt="Next.js Logo" className="mb-4" />
       <ul className=" list-disc pl-6 mb-6">
         <li className="mb-2">
           Explorer: Click on{' '}

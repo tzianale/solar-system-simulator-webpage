@@ -18,14 +18,14 @@ const SMcreatecelestialbodies: React.FC = () => {
                 <li className="mb-2"><strong>Initial Velocity:</strong> XYZ values in km/s for the starting velocity of your celestial body.</li>
                 <li className="mb-2"><strong>Color:</strong> A new window opens where you can choose the color of your celestial body.</li>
             </ol>
-            <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+            <img src="/createcelestialbody.gif" alt="Next.js Logo" className="mb-4 w-9/12" />
             <p className="mb-2">
                 All fields must be filled out with valid values. If any fields are invalid, the corresponding field will be highlighted in red.
             </p>
             <p className="mb-2">
                 Once all fields are correctly filled out, you can click the <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">Create</span> button to add your new celestial body to the simulation. You will see it in the simulation and observe its gravitational impact on the other celestial bodies. There will also be a new entry for your celestial body in the list below, along with an info tab that appears when you click the entry. Visit the Planet Information section to learn how to use the info tab.
             </p>
-            <img src="/sun.png" alt="Next.js Logo" className="mb-4" />
+            <img src="/shownewcelestialbody.gif" alt="Next.js Logo" className="mb-4 w-9/12" />
             <p className="mb-2">
                 <strong>Keep in mind:</strong> Depending on the status of the other celestial bodies in the simulation, various occurrences may happen. For example, if the new celestial body has a large enough mass, it might pull all other celestial bodies towards it. Alternatively, if the new celestial body has a high initial velocity, it might not be significantly affected by the gravitational forces of the other celestial bodies. It all depends on your inputs.
             </p>
