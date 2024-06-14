@@ -8,7 +8,7 @@ const GSInstallation: React.FC = () => {
         <p className="mb-2">
           Download the latest version of the solar system simulator{' '}
           <a
-            href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/archive/refs/heads/main.zip"
+            href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/Alpha/solarsystemsimulator_alpha.zip"
             className="bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold "
           >
             here
