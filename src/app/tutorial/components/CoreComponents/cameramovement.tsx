@@ -11,14 +11,18 @@ const CGCameraMovement: React.FC = () => {
       <div className="mb-4">
         <ol className="list-decimal pl-6 mb-6">
           <li className="mb-2">
-            Pan: Hold the{' '}
+          <span className=" font-bold ">
+            Pan:
+            </span>{' '}Hold the{' '}
             <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
               left mouse button
             </span>{' '}
             and drag to pan the camera across the scene.{' '}
           </li>
           <li className="mb-2">
-            Zoom In/Out: Use the{' '}
+          <span className=" font-bold ">
+          Zoom In/Out:
+            </span>{' '} Use the{' '}
             <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
               {' '}
               scroll wheel
@@ -26,14 +30,18 @@ const CGCameraMovement: React.FC = () => {
             to zoom in and out, bringing objects closer or pushing them further away.{' '}
           </li>
           <li className="mb-2">
-            Rotate: Hold the{' '}
+          <span className=" font-bold ">
+            Rotate:
+            </span>{' '} Hold the{' '}
             <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
               right mouse button
             </span>{' '}
             and move the mouse to rotate the camera around the current pivot point.{' '}
           </li>
           <li className="mb-2">
-            Increase Sensitivity: Hold the{' '}
+          <span className=" font-bold ">
+            Increase Sensitivity:
+            </span>{' '} Hold the{' '}
             <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
               Shift key
             </span>{' '}
@@ -41,7 +49,9 @@ const CGCameraMovement: React.FC = () => {
             faster movements.{' '}
           </li>
           <li className="mb-2">
-            Reset View: Press the{' '}
+          <span className=" font-bold ">
+            Reset Camera:
+            </span>{' '} Press the{' '}
             <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
               {' '}
               R key

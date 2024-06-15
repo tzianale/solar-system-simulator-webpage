@@ -4,47 +4,46 @@ const CGTimeControl: React.FC = () => {
       <h2 className="text-xl font-semibold mb-2">Time Controls</h2>
 
       <p className="mb-4">
-        You have a{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          Play/Pause button
-        </span>{' '}
-        that allows you to stop or start the simulation. Positioned at the top left, there is a{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          Simulationspeed Slider
-        </span>{' '}
-        that enables you to control the speed of the simulation.
+        The following image depicts the time control elements of the simulation. The UI has five
+        interactable elements:
       </p>
+
+      <ul className="list-disc pl-6 mb-6">
+        <li className="mb-2">
+          Clicking the{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            Play/Pause button
+          </span>{' '}
+          allows you to pause or resume the simulation, useful for taking screenshots or examining
+          planetary positions closely.
+        </li>
+        <li className="mb-2">
+          Clicking the{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            &gt;&gt; button
+          </span>{' '}
+          will move the simulation normally, allowing you to explore the future.
+        </li>
+        <li className="mb-2">
+          Clicking the{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            &lt;&lt; button
+          </span>{' '}
+          will move the simulation back in time, essentially letting you rewind the solar system.
+        </li>
+        <li className="mb-2">
+          Move the{' '}
+          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            Simulationspeed Slider
+          </span>{' '}
+          to control the speed of the simulation.
+        </li>
+      </ul>
+
       <p className="mb-4">
-        The selected speed will be displayed next to it. In Explorer Mode, top left, you can also
-        see the current date of the simulation. You can click on the date and a window will pop up.
-        There you can choose a date and time. You can click on{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          Submit
-        </span>{' '}
-        and the simulation will move to this time. Additionally, you have two buttons{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          {'<<'}
-        </span>{' '}
-        and{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          {'>>'}
-        </span>{' '}
+        There are more Controls available depending on the mode you are in ....
       </p>
-      <p className="mb-4">
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          {'<<'}
-        </span>{' '}
-        will go back to the time and you will take a journey to the past while{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          {'>>'}
-        </span>{' '}
-        will show you the future! Finally, you have a{' '}
-        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-          Real Time Checkmark
-        </span>{' '}
-        Here the simulation will ignore the simulation slider and the speed will be adjusted to the
-        real lifetime.
-      </p>
+
       <div className=" flex justify-center ">
         <img src="/timecontrol1.png" width={900} alt="Next.js Logo" className="mb-4 " />
       </div>

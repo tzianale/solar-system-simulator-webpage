@@ -140,7 +140,7 @@ export default function Home() {
 
                   <li>
                     <div className="flex items-center justify-center text-md pb-2 font-bold px-2 ">
-                      Core Conponents
+                      Core Components
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
                       <button
@@ -208,7 +208,7 @@ export default function Home() {
                         onClick={() => setSelectedTopic('MSimulator')}
                       >
                         {' '}
-                        Simulator{' '}
+                        Explorer{' '}
                       </button>
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
@@ -224,7 +224,7 @@ export default function Home() {
 
                   <li>
                     <div className="flex items-center justify-center text-md pb-2 font-bold px-2">
-                      Simulator
+                    Explorer
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
                       <button

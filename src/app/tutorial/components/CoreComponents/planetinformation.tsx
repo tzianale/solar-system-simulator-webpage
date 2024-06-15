@@ -22,105 +22,85 @@ const CGPlanetInformation: React.FC = () => {
         information only):
       </p>
       <ul className="list-disc pl-6">
-        <li>Mass: The mass of the body in kg </li>
-        <li>
-          Body Type: Describes what kind of object the body is. Objects can be Stars, Rocky Planets,
-          Dwarf Planets, Moons, Gas Giants, or Ice Giants{' '}
+        <li className="mb-2">
+          <span className=" font-bold ">Mass:</span> The mass of the body in kg{' '}
         </li>
-        <li>
-          Surface Temperature: The range of temperatures to be expected on the surface of the
-          selected body in °C{' '}
+        <li className="mb-2">
+          <span className=" font-bold ">Body Type: </span> Describes what kind of object the body
+          is. Objects can be Stars, Rocky Planets, Dwarf Planets, Moons, Gas Giants, or Ice Giants{' '}
         </li>
-        <li>Radius: The radius size of the object in km </li>
-        <li>Gravity: The gravitational pull of the object in g </li>
-        <li>Average Orbital Speed (self-explanatory) in km / s </li>
-        <li>Satellites: How many satellites are orbiting around the object </li>
-        <li>Rings: Presence / absence of rings orbiting the object </li>
-        <li>
-          Periapsis: The closest distance that the object will achieve between itself and the object
-          that it’s been orbiting in km
+        <li className="mb-2">
+          <span className=" font-bold ">Surface Temperature</span> The range of temperatures to be
+          expected on the surface of the selected body in °C{' '}
         </li>
-        <li>
-          Apoapsis: The furthest distance that the object will achieve between itself and the object
-          that it’s been orbiting in km{' '}
+        <li className="mb-2">
+          <span className=" font-bold ">Radius:</span> The radius size of the object in km{' '}
         </li>
-        <li>
-          Orbit Duration: How long it takes for the object to complete a full orbit around the
-          object that it’s been orbiting, in terrestrial days{' '}
+        <li className="mb-2">
+          <span className=" font-bold ">Gravity:</span> The gravitational pull of the object in g{' '}
         </li>
-        <li>
-          Day Duration: How long it takes for the object to complete a full turn on itself in
+
+        <li className="mb-2">Average Orbital Speed (self-explanatory) in km / s </li>
+
+        <li className="mb-2">
+          <span className=" font-bold ">Satellites:</span> How many satellites are orbiting around
+          the object{' '}
+        </li>
+        <li className="mb-2">
+          <span className=" font-bold ">Rings:</span> Presence / absence of rings orbiting the
+          object{' '}
+        </li>
+        <li className="mb-2">
+          <span className=" font-bold ">Periapsis:</span> The closest distance that the object will
+          achieve between itself and the object that it's been orbiting in km
+        </li>
+        <li className="mb-2">
+          <span className=" font-bold ">Apoapsis:</span> The furthest distance that the object will
+          achieve between itself and the object that it's been orbiting in km{' '}
+        </li>
+        <li className="mb-2">
+          <span className=" font-bold ">Orbital Period:</span> How long it takes for the object to
+          complete a full orbit around the object that it's been orbiting, in terrestrial days{' '}
+        </li>
+        <li className="mb-2">
+        <span className=" font-bold ">Day Duration:</span> How long it takes for the object to complete a full turn on itself in
           terrestrial days{' '}
         </li>
       </ul>
       <p className="mb-2 mt-4"> Live Stats (properties that change over time)</p>
       <ul className="list-disc pl-6">
-        <li>Current Speed: The current velocity of the object in the simulation. </li>
-        <li>
-          Distance to sun: The current distance between the sun and the object in the simulation.{' '}
+        <li className="mb-2"><span className=" font-bold ">Current Speed:</span> The current velocity of the object in the simulation. </li>
+        <li className="mb-2">
+        <span className=" font-bold ">Distance to Sun:</span> The current distance between the sun and the object in the simulation.{' '}
         </li>
       </ul>
 
       <p className="mb-2 mt-4">
         The Info Tab also includes a description field, which contains interesting facts or
-        curiosities about the object. The interactive features in the Explorer mode are the
-        following:
+        curiosities about the object. You can also edit the description to add your own notes.
       </p>
       <ul className="list-disc pl-6">
-        <li>
-          Add New Property: Press the blue{' '}
+        <li className="mb-2">
+          Press the blue{' '}
           <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
             + button
           </span>{' '}
-          to introduce a new editable property.{' '}
+          to introduce add a new editable property.{' '}
         </li>
-        <li>
-          Remove Property: Click the{' '}
+        <li className="mb-2">
+          Press on the{' '}
           <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
             - button
           </span>{' '}
           next to a property to remove it.{' '}
         </li>
-        <li>
-          Edit Property or Description: Double-click on any text to edit the property value or the
+        <li className="mb-2">
+        <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
+            Double click
+          </span>{' '} on any text to edit the property value or the
           description itself.
         </li>
       </ul>
-      <p className="mb-2 mt-4">
-        The eventual changes in properties and descriptions are partially saved: the values are
-        reset to default as soon as the user goes back to the main menu or closes the program. Until
-        then, all changes will be saved in the respective info tabs, even if the user switches
-        between planets.
-      </p>
-
-      <h3 className="text-lg font-semibold mt-4 mb-2">Interactive Features in Sandbox Mode:</h3>
-
-      <p className="mb-2">
-        In the Sandbox Mode the info tab is slightly different: there is a new category of
-        properties, the Variable ones, which, when changed, will impact the simulation.
-      </p>
-      <p className="mb-2">
-        The following screenshot depicts an example of Info Tab in the Sandbox mode with the
-        relevant buttons.{' '}
-      </p>
-
-      <div className=" flex justify-center ">
-        <img src="/planetinformation3.png" alt="Next.js Logo" className="mb-4" />
-      </div>
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold mb-2">Closing / Switching the Info Tab </h3>
-        <p className="mb-2">
-          Close the Info Tab: You can click the red{' '}
-          <span className=" bg-white text-slate-900 p-0.5 px-1.5 rounded-md shadow-lg font-bold ">
-            X button
-          </span>{' '}
-          in the top right corner or click on the same planet in the planet list again.
-        </p>
-        <p className="mb-2">
-          Switch between Tabs: Clicking on a different planet in the list will close the current tab
-          and open a new one with data for the newly selected planet.
-        </p>
-      </div>
     </div>
   );
 };
