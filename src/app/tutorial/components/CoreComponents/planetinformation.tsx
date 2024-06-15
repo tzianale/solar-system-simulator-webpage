@@ -52,15 +52,15 @@ const CGPlanetInformation: React.FC = () => {
         </li>
         <li className="mb-2">
           <span className=" font-bold ">Periapsis:</span> The closest distance that the object will
-          achieve between itself and the object that it's been orbiting in km
+          achieve between itself and the object that it&apos;s been orbiting in km
         </li>
         <li className="mb-2">
           <span className=" font-bold ">Apoapsis:</span> The furthest distance that the object will
-          achieve between itself and the object that it's been orbiting in km{' '}
+          achieve between itself and the object that it&apos;s been orbiting in km{' '}
         </li>
         <li className="mb-2">
           <span className=" font-bold ">Orbital Period:</span> How long it takes for the object to
-          complete a full orbit around the object that it's been orbiting, in terrestrial days{' '}
+          complete a full orbit around the object that it&apos;s been orbiting, in terrestrial days{' '}
         </li>
         <li className="mb-2">
         <span className=" font-bold ">Day Duration:</span> How long it takes for the object to complete a full turn on itself in
