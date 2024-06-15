@@ -58,11 +58,11 @@ export default function Home() {
                 Solar System
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Discover our Solar System Simulator—explore, manipulate, and create planets.
+                Discover our Solar System Simulator Sandbox Mode — explore, manipulate, and create planets.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <a
-                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/Alpha/solarsystemsimulator_alpha.zip"
+                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/prerelease/solar-system-simulator-v0.1-prerelease.zip"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Download
@@ -86,16 +86,10 @@ export default function Home() {
                 for Studends
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Engage students with our Solar System simulator! Explore space, learn physics, and
+                Engage students with our Solar System Simulator Explorer Mode! Explore space, learn physics, and
                 spark curiosity in the classroom.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <a
-                  href="/"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Contact us
-                </a>
                 <a href="/" className="text-sm font-semibold leading-6 text-white">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
@@ -107,25 +101,16 @@ export default function Home() {
         <div className="relative flex-1 flex items-center bg-gradient-to-b from-blue-950 to-blue-800 h-screen justify-center">
           <img src="/Erde.png" alt="Next.js Logo" className="absolute bottom-0 z-0" />
           <div className="relative z-10 isolate overflow-hidden backdrop-blur-sm  bg-white/5 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-            <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-12 lg:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Explore
-                <br />
-                With our API
+                Start Now
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
-                Designed with the needs of hobbyist astronomers in mind, our user-friendly API
-                seamlessly grants access to precise planet locations
-              </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <a
-                  href="/"
+              <a
+                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/prerelease/solar-system-simulator-v0.1-prerelease.zip"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
-                  Start Now!
-                </a>
-                <a href="./about" className="text-sm font-semibold leading-6 text-white">
-                  Learn more <span aria-hidden="true">→</span>
+                  Download
                 </a>
               </div>
             </div>
