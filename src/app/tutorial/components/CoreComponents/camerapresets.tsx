@@ -1,7 +1,7 @@
 const CGCameraPresets: React.FC = () => {
   return (
     <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
-      <h2 className="text-xl font-semibold mb-2">Camera Presets</h2>
+      <h2 className="text-2xl font-semibold mb-4">Camera Presets</h2>
 
       <p className="mb-4">
         To enhance the user experience, we have included two camera presets that allow you to

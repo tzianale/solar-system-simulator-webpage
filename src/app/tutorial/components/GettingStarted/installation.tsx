@@ -1,7 +1,7 @@
 const GSInstallation: React.FC = () => {
   return (
     <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
-      <h2 className="text-xl font-semibold mb-2">Installation Instructions</h2>
+      <h2 className="text-2xl font-semibold mb-4">Installation Instructions</h2>
 
       <div className="mb-4">
         <h3 className="text-lg font-semibold mb-2">1. Download the Simulator: </h3>

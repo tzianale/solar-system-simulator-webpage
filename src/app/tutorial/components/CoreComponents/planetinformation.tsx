@@ -1,7 +1,7 @@
 const CGPlanetInformation: React.FC = () => {
   return (
     <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
-      <h2 className="text-xl font-semibold mb-2">Planet Information</h2>
+      <h2 className="text-2xl font-semibold mb-4">Planet Information</h2>
 
       <p className="mb-4">
         Each celestial body in the simulation is represented with its own information tab. This tab
@@ -11,7 +11,7 @@ const CGPlanetInformation: React.FC = () => {
       </p>
 
       <div className=" flex justify-center ">
-        <img src="/Planetinormation12.png" alt="Next.js Logo" className="mb-4" />
+        <img src="/Planetinormation12.png" alt="Next.js Logo" className="mb-4 w-9/12" />
       </div>
 
       <h3 className="text-lg font-semibold mt-4 mb-2">Properties Displayed:</h3>

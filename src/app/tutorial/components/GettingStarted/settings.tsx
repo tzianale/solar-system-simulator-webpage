@@ -6,6 +6,9 @@ const GSSettings: React.FC = () => {
         In this window, you can adjust the resolution and graphics settings. There are
         multiple graphic resolutions available, ranging from Low to High.
       </p>
+      <div className=" flex justify-center ">
+        <img src="/settings.png" alt="Next.js Logo" className="mb-4 w-9/12" />
+      </div>
     </div>
   );
 };

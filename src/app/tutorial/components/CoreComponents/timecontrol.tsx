@@ -1,12 +1,16 @@
 const CGTimeControl: React.FC = () => {
   return (
     <div className="w-full max-w-screen-lg mx-auto my-8 px-8">
-      <h2 className="text-xl font-semibold mb-2">Time Controls</h2>
+      <h2 className="text-2xl font-semibold mb-4">Time Controls</h2>
 
       <p className="mb-4">
         The following image depicts the time control elements of the simulation. The UI has five
         interactable elements:
       </p>
+
+      <div className=" flex justify-center ">
+        <img src="/timecontrol1.png" width={900} alt="Next.js Logo" className="mb-4 " />
+      </div>
 
       <ul className="list-disc pl-6 mb-6">
         <li className="mb-2">
@@ -43,13 +47,6 @@ const CGTimeControl: React.FC = () => {
       <p className="mb-4">
         There are more Controls available depending on the mode you are in ....
       </p>
-
-      <div className=" flex justify-center ">
-        <img src="/timecontrol1.png" width={900} alt="Next.js Logo" className="mb-4 " />
-      </div>
-      <div className=" flex justify-center ">
-        <img src="/timecontrol2.png" width={400} alt="Next.js Logo" className="mb-4" />
-      </div>
     </div>
   );
 };

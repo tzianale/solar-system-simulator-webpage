@@ -10,6 +10,10 @@ import CGPlanetInformation from './components/CoreComponents/planetinformation';
 import CGTimeControl from './components/CoreComponents/timecontrol';
 import CGUIComponents from './components/CoreComponents/uicomponents';
 import SMcreatecelestialbodies from './components/SandboxMode/createcelestialbodies';
+import SMPlanet from './components/SandboxMode/planetinfosim';
+import SMoverview from './components/SandboxMode/sandboxoverview';
+import EXPoverview from './components/ExplorerMode/exploreroverview';
+import EXPdateselection from './components/ExplorerMode/dateselect';
 
 export default function Home() {
   const [selecedTopic, setSelectedTopic] = useState('');
@@ -32,21 +36,16 @@ export default function Home() {
         return <CGTimeControl />;
       case 'CCPlanInfo':
         return <CGPlanetInformation />;
-      case 'MOverview':
-        return <div>Overview</div>;
-      case 'MSimulator':
-        return <div>Simulator</div>;
-      case 'MSandbox':
-        return <div>Sandbox</div>;
-      case 'SimOverview':
-        return <div>Overview</div>;
-      case 'SanUIComp':
-        return <div>UI Components</div>;
-      case 'SandCamMov':
-        return <div>Camera Movement</div>;
+      case 'ExpOverview':
+        return <EXPoverview/>;
+      case 'ExpDateSelec':
+        return <EXPdateselection/>;
+      case 'SandOverview':
+        return <SMoverview/>;
       case 'SandBodCrea':
         return (<SMcreatecelestialbodies/>)
-
+      case 'SandPlanInfo':
+        return <SMPlanet/>
 
       default:
         return (
@@ -190,13 +189,13 @@ export default function Home() {
                   </li>
 
                   <li>
-                    <div className="flex items-center justify-center text-md pb-2 font-bold px-2 ">
-                      Modes
+                    <div className="flex items-center justify-center text-md pb-2 font-bold px-2">
+                    Explorer Mode
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
                       <button
                         className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('MOverview')}
+                        onClick={() => setSelectedTopic('ExpOverview')}
                       >
                         {' '}
                         Overview{' '}
@@ -205,58 +204,25 @@ export default function Home() {
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
                       <button
                         className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('MSimulator')}
+                        onClick={() => setSelectedTopic('ExpDateSelec')}
                       >
                         {' '}
-                        Explorer{' '}
-                      </button>
-                    </div>
-                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
-                      <button
-                        className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('MSandbox')}
-                      >
-                        {' '}
-                        Sandbox{' '}
+                        Date Selection{' '}
                       </button>
                     </div>
                   </li>
 
                   <li>
                     <div className="flex items-center justify-center text-md pb-2 font-bold px-2">
-                    Explorer
+                      Sandbox Mode
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
                       <button
                         className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('SimOverview')}
+                        onClick={() => setSelectedTopic('SandOverview')}
                       >
                         {' '}
                         Overview{' '}
-                      </button>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="flex items-center justify-center text-md pb-2 font-bold px-2">
-                      Sandbox
-                    </div>
-                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
-                      <button
-                        className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('SanUIComp')}
-                      >
-                        {' '}
-                        UI Components{' '}
-                      </button>
-                    </div>
-                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
-                      <button
-                        className="hover:text-gray-200 "
-                        onClick={() => setSelectedTopic('SandCamMov')}
-                      >
-                        {' '}
-                        Camera Movement{' '}
                       </button>
                     </div>
                     <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
@@ -266,6 +232,15 @@ export default function Home() {
                       >
                         {' '}
                         Create Celestial Body{' '}
+                      </button>
+                    </div>
+                    <div className="flex items-center justify-center text-sm p-2 text-gray-400 ">
+                      <button
+                        className="hover:text-gray-200 "
+                        onClick={() => setSelectedTopic('SandPlanInfo')}
+                      >
+                        {' '}
+                        Planet Information{' '}
                       </button>
                     </div>
                   </li>
