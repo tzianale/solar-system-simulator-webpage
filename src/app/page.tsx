@@ -62,7 +62,7 @@ export default function Home() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                 <a
-                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/prerelease/solar-system-simulator-v0.1-prerelease.zip"
+                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/Release/solar-system-simulator-v1.0.0.zip"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Download
@@ -107,7 +107,7 @@ export default function Home() {
               </h2>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/prerelease/solar-system-simulator-v0.1-prerelease.zip"
+                  href="https://github.zhaw.ch/Team-42/Solar-System-Simulator/releases/download/Release/solar-system-simulator-v1.0.0.zip"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Download
